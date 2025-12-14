@@ -220,7 +220,7 @@ export const PUBLICATIONS: Publication[] = [
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
-  {
+  /*{
     id: "a1",
     title: "Best Paper Award: Undergraduate AI Symposium 2024",
     description: "Received the highest honor for the research paper on Ontology-Guided RAG, selected from over 50 submissions for its novelty and practical application.",
@@ -231,17 +231,59 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: "Finalist in National AI Hackathon 2023",
     description: "Competed in the Agentic Workflow track, developing a multi-agent system that autonomously optimized supply chain routes. Placed in the top 5 nationwide.",
     date: "Oct 2023"
+  },*/
+  {
+    id: "a1",
+    title: "ICDS 2025 Mini-Hackathon - Top 15 Finalists",
+    description: "Selected as a Top 15 Finalist at the ICDS 2025 Mini-Hackathon, a national-level data science competition organized by the Stat Circle, Faculty of Science, University of Colombo, in collaboration with OCTAVE - John Keells Group.",
+    date: "Nov 2025"
+  },
+  {
+    id: "a2",
+    title: "Code with WIE 2025 - 1st Runner-Up",
+    description: "Achieved 1st Runner-Up at Code with WIE 2025, the 7th annual innovation challenge organized by IEEE WIE Affinity Group Sri Lanka. Competing among top university teams, we developed CareSync, a solution that empowers healthcare professionals to manage burnout effectively through intelligent workload balancing and wellness insights.",
+    date: "Oct 2025"
   },
   {
     id: "a3",
-    title: "DeepLearning.AI: Knowledge Graphs for RAG Certification",
-    description: "Completed advanced specialization covering Neo4j Graph Data Science library and its integration with Large Language Models.",
-    date: "Aug 2023"
+    title: "Data Odyssey 2025 - Best Use of Technology",
+    description: "Recognized with the Best Use of Technology award at the inter-university software innovation competition organized by the AI & Data Science Club of General Sir John Kotelawala Defence University (KDU). This year’s challenge brought together innovative minds to design impactful, AI-driven solutions addressing societal needs. Our project, “Athena: The AI Journal for Cognitive Wellness,” was honored for its use of technology to support individuals with dementia and promote cognitive well-being.",
+    date: "Oct 2025"
   },
   {
     id: "a4",
-    title: "Contributor to Open Source LangChain ecosystem",
-    description: "Contributed code fixes and documentation improvements to the main LangChain repository, focusing on custom retrieval chains.",
-    date: "Ongoing"
+    title: "InnovateX University Edition 2025 - 1st Runner-Up",
+    description: "Achieved 1st Runner-Up at InnovateX University Edition 2025, a national-level hackathon organized by Zebra Technologies. Competing among 17 top university teams, we designed a real-time AI-powered Retail Analytics & Optimization Platform addressing challenges like inventory shrinkage, checkout security, and operational efficiency, all within the 4-hour final challenge.",
+    date: "Oct 2025"
+  },
+  {
+    id: "a5",
+    title: "CodeRally 6.0 - Advanced Tier Finalists",
+    description: "Team F4Version2 was among the top 15 teams in the Advanced Tier of CodeRally 6.0, a national-level hackathon organized by the IEEE Computer Society of IIT. After ranking 8th in the selection rounds, we advanced to the final 24-hour hackathon, showcasing innovative problem-solving and technical expertise against leading university teams.",
+    date: "Sep 2025"
+  },
+  {
+    id: "a6",
+    title: "Tech-Triathlon 2025 - Finalists",
+    description: "Team Mental Breakdowns was selected among the top 8 finalists out of 170+ teams in Tech-Triathlon 2025, a three-phase national-level competition consisted of a hackathon, designathon, and datathon, organized by Rootcode.",
+    date: "Sep 2025"
+  },
+  {
+    id: "a7",
+    title: "Vice Chancellor's List - 2024",
+    description: "Was placed in the Vice Chancellor's List for achieving a Year Grade Point Average (YGPA) of 3.82/4.0.",
+    date: "Dec 2024"
+  },
+  {
+    id: "a8",
+    title: "Data Odyssey 2024 - Champion",
+    description: "Secured first place in the inter-university software innovation competition hosted by the AI & Data Science Club at General Sir John Kotelawala Defence University (KDU). Each year, Data Odyssey invites participants to design and develop groundbreaking AI-powered and data-driven solutions that address real-world challenges. Our project \"GreenAI\", won the first place among 100+ participants.",
+    date: "Oct 2023"
+  },
+  {
+    id: "a9",
+    title: "Dean's List - 2023",
+    description: "Was placed in the Dean's List for achieving a Year Grade Point Average (YGPA) of 3.78/4.0.",
+    date: "Dec 2023"
   }
 ];
