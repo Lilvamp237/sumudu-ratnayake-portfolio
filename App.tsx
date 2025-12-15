@@ -291,7 +291,7 @@ const App: React.FC = () => {
             <div className="text-center">
               <h2 className="text-3xl font-orbitron text-white mb-4">ESTABLISH CONNECTION</h2>
               <p className="text-slate-400">
-                Open to collaborations on Agentic Workflows, Knowledge Graph construction, and RAG optimization research.
+                Open to collaborations on Machine Learning Projects, Agentic Workflows, Knowledge Graph Construction, and Research Projects.
               </p>
             </div>
             
