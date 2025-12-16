@@ -15,7 +15,7 @@ export const USER_INFO = {
 };
 
 export const SKILLS: Skill[] = [
-  { name: "Python / PyTorch", level: 92, category: "AI/ML" },
+  { name: "Python / Tensorflow", level: 60, category: "AI/ML" },
   { name: "LLMs & RAG", level: 88, category: "AI/ML" },
   { name: "LangChain / LangGraph", level: 85, category: "AI/ML" },
   { name: "Knowledge Graphs (Neo4j)", level: 80, category: "Data" },
