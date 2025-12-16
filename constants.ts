@@ -15,14 +15,35 @@ export const USER_INFO = {
 };
 
 export const SKILLS: Skill[] = [
-  { name: "Python / Tensorflow", level: 60, category: "AI/ML" },
-  { name: "LLMs & RAG", level: 88, category: "AI/ML" },
-  { name: "LangChain / LangGraph", level: 85, category: "AI/ML" },
-  { name: "Knowledge Graphs (Neo4j)", level: 80, category: "Data" },
-  { name: "Multi-Agent Systems", level: 78, category: "AI/ML" },
-  { name: "Unity / C#", level: 65, category: "XR" },
-  { name: "React / TypeScript", level: 70, category: "Web" },
-  { name: "FastAPI / Docker", level: 75, category: "Core" },
+  // --- CORE PROTOCOLS (AI/ML, Data, Core) ---
+  
+  // AI & Machine Learning
+  { name: "Deep Learning (TensorFlow)", level: 92, category: "AI/ML" },
+  { name: "RAG & Generative AI", level: 90, category: "AI/ML" },
+  { name: "Multi-Agent Systems", level: 88, category: "AI/ML" },
+  { name: "NLP & Conversational AI", level: 85, category: "AI/ML" },
+  { name: "Computer Vision", level: 82, category: "AI/ML" },
+  
+  // Data & Analytics
+  { name: "Knowledge Graphs", level: 85, category: "Data" },
+  { name: "Data Eng (SQL/NoSQL/Pandas)", level: 80, category: "Data" },
+  
+  // Core Engineering & Cloud
+  { name: "Cloud & DevOps (Docker)", level: 78, category: "Core" },
+  { name: "Backend & OOP (Java)", level: 82, category: "Core" },
+
+  // --- AUXILIARY SYSTEMS (Web, XR, Mobile, Design) ---
+  
+  // Web & Mobile
+  { name: "Full-Stack (React/Next.js/TS)", level: 85, category: "Web" },
+  { name: "Mobile (Flutter/Android)", level: 70, category: "Mobile" },
+  
+  // XR & IoT
+  { name: "XR Development (Unity/C#)", level: 75, category: "XR" },
+  { name: "IoT & Embedded (Arduino)", level: 65, category: "Hardware" },
+  
+  // Design & Leadership
+  { name: "UI/UX & Tech Leadership", level: 75, category: "Design" }
 ];
 
 export const EDUCATION: Experience[] = [
