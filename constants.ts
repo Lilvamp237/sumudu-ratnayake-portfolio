@@ -11,40 +11,61 @@ export const USER_INFO = {
   location: "Sri Lanka",
   linkedin: "https://www.linkedin.com/in/sumudu-ratnayake-782b90235",
   github: "https://github.com/Lilvamp237",
-  avatar: "https://github.com/Lilvamp237.png"
+  avatar: "https://github.com/Lilvamp237.png",
+  resume: "/cv/Sumudu Ratnayake_CV.pdf"
 };
 
+// High-level competencies (Concepts)
 export const SKILLS: Skill[] = [
-  // --- CORE PROTOCOLS (AI/ML, Data, Core) ---
+  // AI/ML
+  { name: "Classical Machine Learning", level: 50, category: "AI/ML" },
+  { name: "Deep Learning & Neural Networks", level: 45, category: "AI/ML" },
+  { name: "Retrieval-Augmented Generation (RAG)", level: 10, category: "AI/ML" },
+  { name: "Ensemble Methods & Random Forests", level: 45, category: "AI/ML" },
+  { name: "Multi-Agent Systems", level: 35, category: "AI/ML" },
+  { name: "Model Deployment (Streamlit)", level: 60, category: "AI/ML" },
+  { name: "Natural Language Processing", level: 40, category: "AI/ML" },
+  { name: "Computer Vision", level: 40, category: "AI/ML" },
   
-  // AI & Machine Learning
-  { name: "Deep Learning (TensorFlow)", level: 92, category: "AI/ML" },
-  { name: "RAG & Generative AI", level: 90, category: "AI/ML" },
-  { name: "Multi-Agent Systems", level: 88, category: "AI/ML" },
-  { name: "NLP & Conversational AI", level: 85, category: "AI/ML" },
-  { name: "Computer Vision", level: 82, category: "AI/ML" },
+  // Data & Core
+  { name: "Graph Data Modeling", level: 40, category: "Data" },
+  { name: "Predictive Analytics", level: 50, category: "Data" },
+  { name: "Full-Stack Engineering", level: 55, category: "Dev" },
   
-  // Data & Analytics
-  { name: "Knowledge Graphs", level: 85, category: "Data" },
-  { name: "Data Eng (SQL/NoSQL/Pandas)", level: 80, category: "Data" },
-  
-  // Core Engineering & Cloud
-  { name: "Cloud & DevOps (Docker)", level: 78, category: "Core" },
-  { name: "Backend & OOP (Java)", level: 82, category: "Core" },
-
-  // --- AUXILIARY SYSTEMS (Web, XR, Mobile, Design) ---
-  
-  // Web & Mobile
-  { name: "Full-Stack (React/Next.js/TS)", level: 85, category: "Web" },
-  { name: "Mobile (Flutter/Android)", level: 70, category: "Mobile" },
-  
-  // XR & IoT
-  { name: "XR Development (Unity/C#)", level: 75, category: "XR" },
-  { name: "IoT & Embedded (Arduino)", level: 65, category: "Hardware" },
-  
-  // Design & Leadership
-  { name: "UI/UX & Tech Leadership", level: 75, category: "Design" }
+  // Design & XR
+  { name: "XR/Spatial Computing", level: 20, category: "XR" },
+  { name: "UI/UX Design", level: 40, category: "Design" }
 ];
+
+// Soft Skills / System Drivers
+export const SOFT_SKILLS = [
+  { name: "Algorithmic Problem Solving", description: "Decomposing complex, ambiguous challenges into executable, logical sub-routines." },
+  { name: "Collaborative Synergy", description: "Effective synchronization and operation within cross-functional human squads." },
+  { name: "Adaptive Plasticity", description: "Rapid runtime assimilation of emerging technologies, frameworks, and paradigms." },
+  { name: "Technical Communication", description: "Lossless translation of complex high-level logic into stakeholder-friendly formats." }
+];
+
+// Specific Tools & Technologies
+export const TECH_STACK = {
+  "Languages": [
+    "Python", "Java", "C++", "Dart", "TypeScript", "SQL", "C#"
+  ],
+  "AI Frameworks": [
+    "TensorFlow", "Keras", "Scikit-Learn", "DeepFace", "RASA"//, "LangChain", "LangGraph"
+  ],
+  "Web & Mobile": [
+    "React.js", "Next.js", "Vue.js", "Tailwind CSS", "Flutter"//, "Android Studio", "Node.js"
+  ],
+  "Data & Databases": [
+    "Pandas", "Matplotlib", "Neo4j", "PostgreSQL", "MySQL", "Firebase", "Supabase"//, "Qdrant"
+  ],
+  "Cloud & DevOps": [
+    "Git", "Docker", "Azure ML", "Postman", "Oracle Cloud"
+  ],
+  "XR & Hardware": [
+    "Arduino", "Unity", "VR Foundation", "IoT Sensors"//, "Meta Quest SDK"
+  ]
+};
 
 export const EDUCATION: Experience[] = [
   {

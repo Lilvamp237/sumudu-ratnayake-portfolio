@@ -19,12 +19,18 @@ import {
   Phone,
   Globe,
   ExternalLink,
-  Award
+  Award,
+  Wrench,
+  Download,
+  Zap,
+  Users,
+  MessageSquare,
+  Lightbulb
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Data
-import { USER_INFO, SKILLS, EDUCATION, PUBLICATIONS, CERTIFICATIONS } from './constants';
+import { USER_INFO, SKILLS, TECH_STACK, EDUCATION, PUBLICATIONS, CERTIFICATIONS, SOFT_SKILLS } from './constants';
 import { Section } from './types';
 
 // Components
@@ -57,16 +63,26 @@ const App: React.FC = () => {
 
   // Helper to highlight keywords in tagline
   const renderTagline = () => {
-    const parts = USER_INFO.tagline.split(/(AI\/ML|Game Dev)/g);
+    const parts = USER_INFO.tagline.split(/(AI\/ML|XR)/g);
     return (
       <p className="text-sm md:text-base text-purple-400 font-mono tracking-widest mt-1">
         {parts.map((part, i) => {
           if (part === 'AI/ML') return <span key={i} className="text-green-400 font-bold drop-shadow-[0_0_5px_rgba(74,222,128,0.5)]">AI/ML</span>;
-          if (part === 'Game Dev') return <span key={i} className="text-green-400 font-bold drop-shadow-[0_0_5px_rgba(74,222,128,0.5)]">Game Dev</span>;
+          if (part === 'XR') return <span key={i} className="text-green-400 font-bold drop-shadow-[0_0_5px_rgba(74,222,128,0.5)]">XR</span>;
           return <span key={i}>{part}</span>;
         })}
       </p>
     );
+  };
+
+  const getSoftSkillIcon = (index: number) => {
+    switch (index) {
+      case 0: return <Lightbulb size={24} className="text-yellow-400" />;
+      case 1: return <Users size={24} className="text-blue-400" />;
+      case 2: return <Zap size={24} className="text-purple-400" />;
+      case 3: return <MessageSquare size={24} className="text-green-400" />;
+      default: return <Cpu size={24} className="text-slate-400" />;
+    }
   };
 
   const renderContent = () => {
@@ -109,13 +125,13 @@ const App: React.FC = () => {
                   <h3 className="text-purple-400 font-bold mb-2">CURRENT STATUS</h3>
                   <div className="text-sm text-slate-300">
                     <p>Level 4 Undergraduate</p>
-                    <p>Spec: AI/ML, Agents, and XR </p>
+                    <p>Spec: : AI/ML, Agents, and XR </p>
                     <p>Location: {USER_INFO.location}</p>
                     <p>Status: Research Mode</p>
                   </div>
                </div>
                <div className="border border-slate-700 bg-slate-800/50 p-4 rounded-lg flex flex-col justify-center items-center gap-4">
-                  <h3 className="text-slate-400 font-bold text-sm">EXTERNAL LINKS</h3>
+                  <h3 className="text-slate-400 font-bold text-sm">DATA CHANNELS</h3>
                   <div className="flex gap-4">
                     <a href={USER_INFO.linkedin} target="_blank" className="p-2 bg-blue-600/20 text-blue-400 border border-blue-500 rounded hover:bg-blue-600 hover:text-white transition-all">
                       <Linkedin size={24} />
@@ -124,6 +140,14 @@ const App: React.FC = () => {
                       <Github size={24} />
                     </a>
                   </div>
+                  <a 
+                    href={USER_INFO.resume} 
+                    target="_blank"
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 border border-green-500/30 text-green-400 rounded hover:bg-green-600 hover:text-white transition-all text-xs font-bold font-orbitron tracking-wider shadow-[0_0_10px_rgba(34,197,94,0.1)] hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]"
+                  >
+                    <Download size={16} />
+                    DOWNLOAD RESUME
+                  </a>
                </div>
             </div>
           </div>
@@ -131,22 +155,72 @@ const App: React.FC = () => {
 
       case Section.SKILLS:
         return (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-slate-900/50 p-6 border border-purple-500/30 rounded-lg">
-              <h3 className="text-xl font-orbitron text-purple-400 mb-6 border-b border-purple-500/30 pb-2">
-                CORE PROTOCOLS
+          <div className="space-y-12">
+            
+            {/* Competencies Section */}
+            <div>
+              <h3 className="text-lg font-orbitron text-purple-400 mb-6 border-b border-purple-500/30 pb-2 flex items-center gap-2">
+                 <Cpu className="text-purple-500" /> CORE COMPETENCIES
               </h3>
-              {SKILLS.filter(s => ['AI/ML', 'Data', 'Core'].includes(s.category)).map((skill) => (
-                <SkillBar key={skill.name} {...skill} color="purple" />
-              ))}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="bg-slate-900/50 p-6 border border-purple-500/30 rounded-lg">
+                  <h4 className="text-sm font-bold text-slate-400 mb-4">PRIMARY PROTOCOLS (AI/Data)</h4>
+                  {SKILLS.filter(s => ['AI/ML', 'Data', 'Dev'].includes(s.category)).map((skill) => (
+                    <SkillBar key={skill.name} {...skill} color="purple" />
+                  ))}
+                </div>
+                <div className="bg-slate-900/50 p-6 border border-green-500/30 rounded-lg">
+                  <h4 className="text-sm font-bold text-slate-400 mb-4">SECONDARY MODULES (XR/Design)</h4>
+                  {SKILLS.filter(s => !['AI/ML', 'Data', 'Dev'].includes(s.category)).map((skill) => (
+                    <SkillBar key={skill.name} {...skill} color="green" />
+                  ))}
+                </div>
+              </div>
             </div>
-            <div className="bg-slate-900/50 p-6 border border-green-500/30 rounded-lg">
-              <h3 className="text-xl font-orbitron text-green-400 mb-6 border-b border-green-500/30 pb-2">
-                AUXILIARY SYSTEMS
+
+            {/* Soft Skills Section */}
+            <div>
+              <h3 className="text-lg font-orbitron text-white mb-6 border-b border-slate-700 pb-2 flex items-center gap-2">
+                 <BrainCircuit className="text-yellow-500" /> COGNITIVE DRIVERS
               </h3>
-              {SKILLS.filter(s => !['AI/ML', 'Data', 'Core'].includes(s.category)).map((skill) => (
-                <SkillBar key={skill.name} {...skill} color="green" />
-              ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                 {SOFT_SKILLS.map((skill, index) => (
+                   <div key={index} className="flex items-start gap-4 p-4 bg-slate-900/40 rounded border border-slate-800 hover:border-yellow-500/30 transition-colors group">
+                      <div className="p-3 bg-slate-950 rounded border border-slate-800 group-hover:border-yellow-500/50 transition-colors">
+                        {getSoftSkillIcon(index)}
+                      </div>
+                      <div>
+                        <h4 className="text-sm font-bold text-slate-200 mb-1 group-hover:text-yellow-400 transition-colors">{skill.name}</h4>
+                        <p className="text-xs text-slate-500 leading-relaxed">{skill.description}</p>
+                      </div>
+                   </div>
+                 ))}
+              </div>
+            </div>
+
+            {/* Tech Stack Section */}
+            <div>
+              <h3 className="text-lg font-orbitron text-white mb-6 border-b border-slate-700 pb-2 flex items-center gap-2">
+                <Wrench className="text-green-500" />
+                TECHNICAL ARSENAL
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                 {Object.entries(TECH_STACK).map(([category, tools]) => (
+                    <div key={category} className="bg-slate-900/40 p-4 rounded border border-slate-800 hover:border-green-500/30 hover:bg-slate-900/60 transition-all group">
+                       <h4 className="text-green-400 font-bold mb-3 text-xs font-orbitron tracking-wide group-hover:text-green-300">{category.toUpperCase()}</h4>
+                       <div className="flex flex-wrap gap-2">
+                          {tools.map(tool => (
+                             <span 
+                               key={tool} 
+                               className="px-2.5 py-1 bg-slate-950 text-slate-400 text-[11px] rounded border border-slate-800 font-mono hover:text-white hover:border-purple-500 hover:bg-purple-900/10 transition-colors cursor-default"
+                             >
+                               {tool}
+                             </span>
+                          ))}
+                       </div>
+                    </div>
+                 ))}
+              </div>
             </div>
           </div>
         );
@@ -262,6 +336,7 @@ const App: React.FC = () => {
                     </div>
                  ))}
                </div>
+
                <div className="mt-6 flex justify-center">
                  <a 
                    href="https://www.linkedin.com/in/sumudu-ratnayake-782b90235/details/certifications/" 

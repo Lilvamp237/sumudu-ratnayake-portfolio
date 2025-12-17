@@ -1,6 +1,6 @@
 
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
-import { USER_INFO, SKILLS, PROJECTS, EDUCATION, ACHIEVEMENTS, PUBLICATIONS, CERTIFICATIONS } from '../constants';
+import { USER_INFO, SKILLS, PROJECTS, EDUCATION, ACHIEVEMENTS, PUBLICATIONS, CERTIFICATIONS, TECH_STACK, SOFT_SKILLS } from '../constants';
 
 const SYSTEM_INSTRUCTION = `
 You are the "Holo-Assistant" for Sumudu Ratnayake's portfolio website. 
@@ -12,9 +12,16 @@ Name: ${USER_INFO.name}
 Title: ${USER_INFO.title}
 About: ${USER_INFO.about}
 Links: LinkedIn (${USER_INFO.linkedin}), GitHub (${USER_INFO.github}).
+Resume: Available for download in the "Identity" section.
 
-Skills:
+Key Competencies:
 ${SKILLS.map(s => `- ${s.name} (${s.category})`).join('\n')}
+
+Cognitive Drivers (Soft Skills):
+${SOFT_SKILLS.map(s => `- ${s.name}: ${s.description}`).join('\n')}
+
+Technical Arsenal (Tech Stack):
+${Object.entries(TECH_STACK).map(([cat, tools]) => `${cat}: ${tools.join(', ')}`).join('\n')}
 
 Education:
 ${EDUCATION.map(e => `- ${e.title} at ${e.role} (${e.date}): ${e.description}`).join('\n')}
