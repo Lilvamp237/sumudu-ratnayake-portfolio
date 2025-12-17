@@ -33,7 +33,7 @@ Projects:
 ${PROJECTS.map(p => `- ${p.title} (${p.category}): ${p.description}. Tech: ${p.techStack.join(', ')}`).join('\n')}
 
 Publications:
-${PUBLICATIONS.map(p => `- "${p.title}" presented at ${p.conference} (${p.date}). Summary: ${p.description}`).join('\n')}
+${PUBLICATIONS.map(p => `- [${p.status}] "${p.title}" presented at ${p.conference} (${p.date}). Summary: ${p.description}`).join('\n')}
 
 Achievements:
 ${ACHIEVEMENTS.map(a => `- ${a.title} (${a.date}): ${a.description}`).join('\n')}

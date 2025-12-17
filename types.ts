@@ -31,6 +31,7 @@ export interface Publication {
   date: string;
   description: string;
   link?: string;
+  status: 'Published' | 'Under Review' | 'Ongoing';
 }
 
 export interface Achievement {

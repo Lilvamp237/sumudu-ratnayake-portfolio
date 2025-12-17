@@ -229,21 +229,26 @@ export const PUBLICATIONS: Publication[] = [
     conference: "18th International Research Conference - General Sir John Kotelawala Defence University",
     date: "Oct 2025",
     description: "Proposed a data-driven, user-centered mobile application design (Sleepzy) with a Personalized Adaptive Sleep Intervention (PASI) framework to non-invasively detect REM sleep and customize sensory cues for lucid dream induction and sleep disorder management.",
-    link: "https://irc.kdu.ac.lk/2025/documents/2025/abstracts/irc25_abstract_book_foc.pdf"
+    link: "https://irc.kdu.ac.lk/2025/documents/2025/abstracts/irc25_abstract_book_foc.pdf",
+    status: "Published"
   },
   {
     title: "A Unified Framework for SLA-Aware and Carbon-Conscious Green Cloud Computing: A Holistic Approach to Sustainable",
     conference: "18th International Research Conference - General Sir John Kotelawala Defence University",
-    date: "Oct 2025",
+    date: "Oct 2025", //"Submitted Aug 2024"
     description: "Developed the Unified Green Cloud Computing Optimization Framework (UGCCOF) to holistically balance energy efficiency, carbon emissions, and Service Level Agreements (SLAs) using a multi-objective decision-making model to overcome the limitations of fragmented single-metric solutions.",
-    link: "https://irc.kdu.ac.lk/2025/documents/2025/abstracts/irc25_abstract_book_foc.pdf"
+    link: "https://irc.kdu.ac.lk/2025/documents/2025/abstracts/irc25_abstract_book_foc.pdf",
+    //status: "Under Review"
+    status: "Published"
   },
   {
     title: "Enhancing Sustainability Awareness Through Mobile Applications: A Comparative Case Study and Analysis",
     conference: "18th International Research Conference - General Sir John Kotelawala Defence University",
-    date: "Oct 2025",
+    date: "Oct 2025", //"Est. Completion May 2025"
     description: "Comprehensive qualitative analysis of mobile applications (SDG and non-SDG based) to identify critical technical and UI/UX gaps hindering user retention and real-world impact on environmental sustainability",
-    link: "https://irc.kdu.ac.lk/2025/documents/2025/abstracts/irc25_abstract_book_fmsh.pdf"
+    link: "https://irc.kdu.ac.lk/2025/documents/2025/abstracts/irc25_abstract_book_fmsh.pdf",
+    //status: "Ongoing"
+    status: "Published"
   }
   /*{
     title: "Enhancing RAG Accuracy with Domain-Specific Ontologies",

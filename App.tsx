@@ -25,13 +25,16 @@ import {
   Zap,
   Users,
   MessageSquare,
-  Lightbulb
+  Lightbulb,
+  CheckCircle,
+  Clock,
+  FlaskConical
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Data
 import { USER_INFO, SKILLS, TECH_STACK, EDUCATION, PUBLICATIONS, CERTIFICATIONS, SOFT_SKILLS } from './constants';
-import { Section } from './types';
+import { Section, Publication  } from './types';
 
 // Components
 import SkillBar from './components/SkillBar';
@@ -83,6 +86,64 @@ const App: React.FC = () => {
       case 3: return <MessageSquare size={24} className="text-green-400" />;
       default: return <Cpu size={24} className="text-slate-400" />;
     }
+  };
+
+  const renderPublicationsGroup = (status: string, title: string, icon: React.ReactNode, colorClass: string) => {
+    const filtered = PUBLICATIONS.filter(p => p.status === status);
+    if (filtered.length === 0) return null;
+
+    return (
+      <div className="mb-10 last:mb-0">
+        <h3 className={`text-lg font-orbitron mb-4 border-b border-slate-800 pb-2 flex items-center gap-2 ${colorClass}`}>
+           {icon} {title}
+        </h3>
+        <div className="grid gap-6">
+          {filtered.map((pub, idx) => (
+            <div key={idx} className="group relative bg-slate-900/50 border border-slate-700 p-6 rounded-lg hover:border-purple-500 transition-colors">
+              {/* Decorative bits */}
+              <div className="absolute top-0 right-0 p-2 opacity-30">
+                 {status === 'Published' && <FileText size={30} className="text-green-800" />}
+                 {status === 'Under Review' && <Clock size={30} className="text-yellow-800" />}
+                 {status === 'Ongoing' && <FlaskConical size={30} className="text-purple-800" />}
+              </div>
+              
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 mb-2">
+                <h3 className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors max-w-2xl">
+                  {pub.title}
+                </h3>
+                <span className={`text-xs font-mono px-2 py-1 rounded border ${
+                    status === 'Published' ? 'text-green-500 bg-green-900/20 border-green-900' :
+                    status === 'Under Review' ? 'text-yellow-500 bg-yellow-900/20 border-yellow-900' :
+                    'text-purple-500 bg-purple-900/20 border-purple-900'
+                }`}>
+                  {pub.date}
+                </span>
+              </div>
+              
+              <p className="text-sm font-mono text-purple-300 mb-4">{pub.conference}</p>
+              
+              <p className="text-slate-400 text-sm leading-relaxed border-l-2 border-slate-700 pl-4 group-hover:border-purple-500 transition-colors mb-4">
+                {pub.description}
+              </p>
+
+              {pub.link && (
+                <div className="flex justify-end">
+                  <a 
+                    href={pub.link} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-xs font-bold text-purple-400 hover:text-white border border-purple-500/30 hover:bg-purple-600/20 px-3 py-2 rounded transition-all"
+                  >
+                    <ExternalLink size={14} />
+                    VIEW MATERIAL
+                  </a>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
   };
 
   const renderContent = () => {
@@ -237,46 +298,9 @@ const App: React.FC = () => {
                <BookOpen className="animate-pulse" />
                <span className="font-orbitron font-bold text-xl">RESEARCH ARCHIVE</span>
              </div>
-             
-             <div className="grid gap-6">
-               {PUBLICATIONS.map((pub, idx) => (
-                 <div key={idx} className="group relative bg-slate-900/50 border border-slate-700 p-6 rounded-lg hover:border-purple-500 transition-colors">
-                    {/* Decorative bits */}
-                    <div className="absolute top-0 right-0 p-2 opacity-50">
-                      <FileText size={40} className="text-slate-800 group-hover:text-purple-900/50 transition-colors" />
-                    </div>
-                    
-                    <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 mb-2">
-                      <h3 className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors max-w-2xl">
-                        {pub.title}
-                      </h3>
-                      <span className="text-xs font-mono text-green-500 bg-green-900/20 px-2 py-1 rounded border border-green-900">
-                        {pub.date}
-                      </span>
-                    </div>
-                    
-                    <p className="text-sm font-mono text-purple-300 mb-4">{pub.conference}</p>
-                    
-                    <p className="text-slate-400 text-sm leading-relaxed border-l-2 border-slate-700 pl-4 group-hover:border-purple-500 transition-colors mb-4">
-                      {pub.description}
-                    </p>
-
-                    {pub.link && (
-                      <div className="flex justify-end">
-                        <a 
-                          href={pub.link} 
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-xs font-bold text-purple-400 hover:text-white border border-purple-500/30 hover:bg-purple-600/20 px-3 py-2 rounded transition-all"
-                        >
-                          <ExternalLink size={14} />
-                          VIEW PUBLICATION
-                        </a>
-                      </div>
-                    )}
-                 </div>
-               ))}
-             </div>
+             {renderPublicationsGroup('Published', 'PUBLISHED PAPERS', <CheckCircle className="text-green-500"/>, "text-green-400")}
+             {renderPublicationsGroup('Under Review', 'UNDER REVIEW', <Clock className="text-yellow-500"/>, "text-yellow-400")}
+             {renderPublicationsGroup('Ongoing', 'ONGOING RESEARCH', <FlaskConical className="text-purple-500"/>, "text-purple-400")}
           </div>
         );
 
