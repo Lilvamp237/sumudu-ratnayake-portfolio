@@ -99,6 +99,14 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     id: "c2",
+    name: "Neo4j Certified Professional",
+    provider: "Neo4j",
+    date: "Dec 2025",
+    badgeUrl: "/badges/neo4j_logo.jpeg",
+    verificationLink: "https://graphacademy.neo4j.com/c/1cf2e865-fa34-4ab9-be28-d889e67dbbb9/"
+  },
+  {
+    id: "c3",
     name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
     provider: "Oracle",
     date: "Sep 2025",
@@ -106,7 +114,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=BCA92DFDF1EE5C98047C5CD7EF1090710F40E633B651CD271D84425D0981BF90"
   },
   {
-    id: "c3",
+    id: "c4",
     name: "Intro to Machine Learning",
     provider: "Kaggle",
     date: "Aug 2025",
@@ -114,7 +122,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://www.kaggle.com/learn/certification/sumuu237/intro-to-machine-learning"
   },
   {
-    id: "c4",
+    id: "c5",
     name: "Unity Essentials Pathway",
     provider: "Unity",
     date: "Jul 2025",
@@ -122,7 +130,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://www.credly.com/badges/20d7c767-4e53-460c-8d4c-192b02759373/linked_in_profile"
   },
   {
-    id: "c5",
+    id: "c6",
     name: "Postman API Fundamentals Student Expert",
     provider: "Postmanapi",
     date: "Feb 2025",
@@ -130,7 +138,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://api.badgr.io/public/assertions/yKS5WPrYQJC1nIIOwBfPUw"    
   },
   {
-    id: "c6",
+    id: "c7",
     name: "Microsoft Certified: Azure AI Fundamentals",
     provider: "Microsoft",
     date: "Feb 2023",
@@ -138,7 +146,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://www.credly.com/badges/e41626c1-8082-491c-a89e-391a0294e5dc/public_url"
   },
   {
-    id: "c7",
+    id: "c8",
     name: "CCNA: Introduction to Networks",
     provider: "Cisco",
     date: "Nov 2023",
