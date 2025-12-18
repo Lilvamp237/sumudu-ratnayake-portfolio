@@ -4,13 +4,13 @@ import ProjectCard from './ProjectCard';
 import { Filter, Layers } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const CATEGORIES = ['ALL', 'AI/ML', 'Game Dev', 'XR', 'Web'];
+const CATEGORIES = ['ALL', 'AI/ML', 'Data Science', 'Web & Full-Stack', 'Healthcare Tech', 'Mobile & Desktop', 'Agent Systems'];
 
 const ProjectsSection: React.FC = () => {
   const [filter, setFilter] = useState('ALL');
 
   const filteredProjects = PROJECTS.filter(p => 
-    filter === 'ALL' || p.category === filter
+    filter === 'ALL' || p.categories.includes(filter)
   );
 
   return (

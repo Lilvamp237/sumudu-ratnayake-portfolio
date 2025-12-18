@@ -51,10 +51,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               />
           </div>
 
-          <div className="absolute bottom-2 left-3 z-20">
-              <span className="text-[10px] font-bold px-2 py-0.5 bg-slate-950/80 text-green-400 border border-green-500/50 rounded backdrop-blur-sm shadow-sm">
-                  {project.category.toUpperCase()}
-              </span>
+          <div className="absolute bottom-2 left-3 z-20 flex flex-wrap gap-1">
+              {project.categories.map(cat => (
+                <span key={cat} className="text-[10px] font-bold px-2 py-0.5 bg-slate-950/80 text-green-400 border border-green-500/50 rounded backdrop-blur-sm shadow-sm">
+                    {cat.toUpperCase()}
+                </span>
+              ))}
           </div>
 
           {!isExpanded && (

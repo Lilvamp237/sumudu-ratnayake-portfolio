@@ -9,7 +9,7 @@ export interface Project {
   github: string;
   demo?: string;
   image?: string;
-  category: 'AI/ML' | 'Game Dev' | 'XR' | 'Web';
+  categories: ('AI/ML' | 'Web & Full-Stack' | 'Data Science' | 'Healthcare Tech' | 'Mobile & Desktop' | 'Agent Systems')[];
 }
 
 export interface Skill {

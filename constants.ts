@@ -165,70 +165,439 @@ export const CERTIFICATIONS: Certification[] = [
 export const PROJECTS: Project[] = [
   {
     id: "p1",
-    title: "Ontology-Guided RAG System",
-    description: "A Retrieval-Augmented Generation system that uses a custom Knowledge Graph (Neo4j) to improve hallucination rates in technical domain queries.",
-    longDescription: "This project tackles the 'Lost in the Middle' phenomenon in RAG by structuring document chunks into a Neo4j graph. By extracting entities and relationships, the LLM can traverse the graph to find contextually relevant information rather than relying solely on vector similarity. The system achieved a 15% improvement in answer accuracy for complex, multi-hop queries compared to a baseline vector store approach.",
-    skillsEarned: ["Graph Database Design", "Prompt Engineering", "RAG Optimization", "Neo4j Cypher"],
-    techStack: ["Python", "LangChain", "Neo4j", "OpenAI API"],
-    category: "AI/ML",
-    github: "https://github.com/Lilvamp237/ontology-rag",
-    image: "https://picsum.photos/600/400?random=10"
+    title: "Intelligent Bookstore Management with Ontology & Multi-Agent Simulation",
+    description: "An autonomous bookstore simulation integrating OWL ontologies, SWRL reasoning, multi-agent systems, and graph databases with real-time visualization.",
+    longDescription: "This project explores the fusion of semantic web technologies and agent-based modeling to simulate an intelligent, self-managing bookstore. An OWL ontology defines the domain knowledge and business rules, while SWRL rules and a Pellet reasoner enable automated inference such as low-stock detection. Customer and employee agents, built using the Mesa framework, act autonomously based on inferred knowledge, coordinating purchases and inventory restocking. A Neo4j graph database captures complex relationships and transaction histories, while a Streamlit dashboard provides real-time monitoring, control, and visualization of the entire system.",
+    skillsEarned: [
+      "Knowledge Representation & Reasoning",
+      "Multi-Agent Systems",
+      "Semantic Web Technologies",
+      "Graph Databases",
+      "Agent-Based Simulation",
+      "System Architecture Design"
+    ],
+    techStack: [
+      "Python",
+      "OWL / SWRL",
+      "owlready2",
+      "Mesa",
+      "Neo4j",
+      "Streamlit",
+      "Pandas",
+      "Plotly"
+    ],
+    categories: ["AI/ML", "Agent Systems"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=5"
   },
   {
     id: "p2",
-    title: "Multi-Agent Research Swarm",
-    description: "An autonomous swarm of agents (Researcher, Writer, Reviewer) built with LangGraph that collaborates to generate comprehensive technical reports.",
-    longDescription: "Utilizing the LangGraph framework, I orchestrated a team of specialized AI agents. The 'Researcher' scrapes web data, the 'Analyst' synthesizes key points, the 'Writer' drafts the content, and the 'Reviewer' provides critique loops. State management was critical to ensure agents didn't hallucinate or loop indefinitely.",
-    skillsEarned: ["Agentic Workflows", "State Management", "Async Python", "System Design"],
-    techStack: ["LangGraph", "Python", "Docker"],
-    category: "AI/ML",
-    github: "https://github.com/Lilvamp237/research-swarm",
-    image: "https://picsum.photos/600/400?random=11"
+    title: "Sup_Audio - Deep Learning Audio Denoising System",
+    description: "A deep learning-powered audio denoising application that uses a U-Net neural network and a PyQt5 interface to remove background noise from audio recordings.",
+    longDescription: "Sup_Audio is an end-to-end audio denoising system that combines deep learning–based signal enhancement with an interactive desktop interface. A U-Net convolutional neural network is trained on noisy audio samples to learn spectrogram-level noise suppression. The system processes audio through STFT-based feature extraction, performs inference on fixed-length spectrogram chunks, and reconstructs clean audio using inverse STFT. A PyQt5 GUI enables real-time recording, waveform visualization, playback, and automatic saving of denoised outputs, making the model accessible for practical, user-facing use cases.",
+    skillsEarned: [
+      "Audio Signal Processing",
+      "Deep Learning Model Design",
+      "Spectrogram-Based Learning",
+      "Desktop Application Development",
+      "Model Inference Pipelines"
+    ],
+    techStack: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "PyQt5",
+      "librosa",
+      "NumPy",
+      "SciPy",
+      "matplotlib"
+    ],
+    categories: ["AI/ML", "Mobile & Desktop"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=6"
   },
   {
     id: "p3",
-    title: "Neural Network 3D Visualizer",
-    description: "Bridging my AI and XR interests: An interactive Unity application that visualizes live weights and biases of a training neural network.",
-    longDescription: "I created a WebSocket bridge between a PyTorch training script and a Unity client. As the model trains in Python, the weights are streamed in real-time to Unity, where they are rendered as glowing 3D connections. The thickness and color of the connections update live, providing an intuitive understanding of how the network learns.",
-    skillsEarned: ["Network Sockets", "Unity Shader Graph", "C# Interop", "Data Visualization"],
-    techStack: ["Unity", "C#", "PyTorch", "WebSockets"],
-    category: "Game Dev",
-    github: "https://github.com/Lilvamp237/neural-viz",
-    image: "https://picsum.photos/600/400?random=1"
+    title: "Telecom Customer Churn Prediction with Genetic Algorithm Optimization",
+    description: "A machine learning system for telecom churn prediction that compares a baseline Logistic Regression model with a Genetic Algorithm-optimized feature selection approach.",
+    longDescription: "This project addresses customer churn prediction in the telecommunications domain using historical multi-month usage data. A baseline Logistic Regression model is developed using extensive feature engineering over revenue, usage, behavioral, and trend-based attributes. To enhance performance and efficiency, a Genetic Algorithm implemented with the DEAP framework is used to optimize feature selection by maximizing the F1-score. An interactive Streamlit dashboard enables side-by-side model comparison, performance visualization, feature importance analysis, and inspection of the genetic algorithm’s evolutionary process.",
+    skillsEarned: [
+      "Customer Churn Modeling",
+      "Feature Engineering",
+      "Evolutionary Algorithms",
+      "Model Evaluation & Comparison",
+      "Applied Business Analytics"
+    ],
+    techStack: [
+      "Python",
+      "scikit-learn",
+      "DEAP",
+      "Pandas",
+      "NumPy",
+      "Streamlit",
+      "Matplotlib",
+      "Seaborn",
+      "Pickle"
+    ],
+    categories: ["Data Science", "AI/ML"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=9"
   },
   {
     id: "p4",
-    title: "Reinforcement Learning FPS Bot",
-    description: "A PPO-based agent trained to play first-person shooters, utilizing computer vision for target acquisition and navigation.",
-    longDescription: "Using Unity ML-Agents and Stable Baselines3, I trained a bot to navigate a 3D maze and shoot moving targets. The agent uses a Convolutional Neural Network (CNN) to process the raw pixel feed from the game engine. Curriculum learning was used to gradually increase the difficulty of the tasks.",
-    skillsEarned: ["Reinforcement Learning (PPO)", "Computer Vision", "Unity ML-Agents", "Hyperparameter Tuning"],
-    techStack: ["Stable Baselines3", "PyTorch", "Unity ML-Agents"],
-    category: "AI/ML",
-    github: "https://github.com/Lilvamp237/fps-rl-agent",
-    image: "https://picsum.photos/600/400?random=3"
+    title: "Smart Home Energy Tracker & Optimization Platform",
+    description: "A full-stack web application that monitors household energy consumption, predicts future usage with machine learning, and optimizes costs using semantic web technologies.",
+    longDescription: "This project implements a three-phase intelligent energy management platform combining data analytics, machine learning, and semantic optimization. A Flask-based backend with SQLite tracks historical energy usage and exposes filterable REST APIs, while a React frontend provides real-time dashboards and interactive visualizations. A Linear Regression model predicts 24-hour energy consumption using engineered temporal, lag, and rolling statistical features. An RDF-based ontology with SPARQL rules enables semantic reasoning over time-of-use pricing to generate actionable energy-saving recommendations and simulate alternative usage scenarios.",
+    skillsEarned: [
+      "Full-Stack Web Development",
+      "Time-Series Feature Engineering",
+      "Energy Consumption Forecasting",
+      "Semantic Web Reasoning",
+      "REST API Design",
+      "Data-Driven Optimization"
+    ],
+    techStack: [
+      "React",
+      "Flask",
+      "SQLite",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "RDF / SPARQL",
+      "rdflib",
+      "Recharts"
+    ],
+    categories: ["Web & Full-Stack", "Data Science", "AI/ML"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=8"
   },
   {
     id: "p5",
-    title: "Semantic Document Search Engine",
-    description: "A vector-search engine optimized for legal documents, utilizing hybrid search (sparse + dense) and re-ranking algorithms.",
-    longDescription: "Legal documents require precise keyword matching alongside semantic understanding. I implemented a hybrid search using Qdrant (Dense vectors) and BM25 (Sparse vectors). A Cross-Encoder was then used to re-rank the retrieved results, ensuring high relevance for domain-specific legal queries.",
-    skillsEarned: ["Vector Databases", "Hybrid Search", "NLP Pipelines", "API Development"],
-    techStack: ["Qdrant", "Sentence-Transformers", "FastAPI"],
-    category: "AI/ML",
-    github: "https://github.com/Lilvamp237/semantic-search",
+    title: "Athena",
+    description: "An AI-powered platform supporting cognitive wellness and dementia care management for patients and caregivers.",
+    longDescription: "Athena is a comprehensive web application designed to assist caregivers in monitoring and supporting individuals with dementia. It provides tools for daily activity logging, patient analytics, AI-powered sentiment tracking, medication management, and motivational guidance. The platform also facilitates team collaboration among caregivers and healthcare professionals and includes an interactive AI assistant for support and insights. Built with React frontend and Python/Node.js backend scripts for AI-powered features, Athena combines cognitive wellness management with modern web technologies.",
+    skillsEarned: [
+      "Full-Stack Web Development",
+      "AI & Sentiment Analysis",
+      "Data Visualization",
+      "Healthcare Tech",
+      "Team Collaboration Tools",
+      "React & Python Integration"
+    ],
+    techStack: [
+      "React",
+      "React Router",
+      "Chart.js",
+      "React-ChartJS-2",
+      "Python",
+      "Node.js",
+      "CSS3",
+      "Jest",
+      "React Testing Library"
+    ],
+    categories: ["Healthcare Tech", "Web & Full-Stack", "AI/ML"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=16"
+  },
+  {
+    id: "p6",
+    title: "CareSync 🏥",
+    description: "Healthcare team coordination and burnout management platform for medical professionals, featuring smart scheduling, wellness tracking, and secure team collaboration.",
+    longDescription: "CareSync helps medical professionals manage demanding shifts, personal wellness, and team collaboration. Built with Next.js, React, TypeScript, and Supabase, it offers a unified calendar for work/personal schedules, shift swap management, priority-based team announcements, and wellness tracking with habit logs. Row Level Security ensures data privacy, while responsive design supports desktop, tablet, and mobile devices. The platform won 1st Runner-Up at Code with WIE 2025.",
+    skillsEarned: [
+      "Full-Stack Web Development",
+      "Healthcare Software Design",
+      "Team Collaboration Tools",
+      "Database Security (RLS)",
+      "Responsive UI/UX"
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "shadcn/ui",
+      "Recharts",
+      "PostgreSQL"
+    ],
+    categories: ["Healthcare Tech", "Web & Full-Stack"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=13"
+  },
+  {
+    id: "p7",
+    title: "Cinnamon Hotels - Agentic Guest Experience Optimizer",
+    description: "An AI-powered system that combines customer segmentation, predictive modeling, and agentic workflows to deliver hyper-personalized hotel guest experiences.",
+    longDescription: "Developed for the Mini Hackathon Semi-Finals organized by the Statistics Circle, University of Colombo, this project implements a multi-stage AI pipeline for intelligent guest experience optimization in the hospitality domain. Unsupervised learning (K-Means) is used to discover behavioral customer segments, while a supervised Random Forest model predicts guest segments in real time using over 19 behavioral, demographic, and psychographic features. An agentic workflow enhanced with Retrieval-Augmented Generation (RAG) integrates hotel data, weather forecasts, and local events to automatically generate context-aware, segment-specific guest communications via a Streamlit-based interactive dashboard.",
+    skillsEarned: [
+      "Customer Segmentation",
+      "Predictive Modeling",
+      "Agentic Workflows",
+      "Retrieval-Augmented Generation (RAG)",
+      "Feature Engineering",
+      "Applied Machine Learning"
+    ],
+    techStack: [
+      "Python",
+      "scikit-learn",
+      "pandas",
+      "NumPy",
+      "Streamlit",
+      "matplotlib",
+      "pickle"
+    ],
+    categories: ["AI/ML", "Data Science", "Agent Systems"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=3"
+  },
+  {
+    id: "p8",
+    title: "Mental Health-Driven Drug Category Prediction",
+    description: "A machine learning system that predicts drug categories based on mental health conditions and usage patterns using XGBoost with PSO-based feature selection.",
+    longDescription: "Developed for the preliminary round of the ICDS 2025 Mini-Hackathon organized by the University of Colombo in collaboration with OCTAVE (JKH Group), this project focuses on multi-class drug category prediction from mental health–related data. The solution integrates a robust preprocessing pipeline with scaling, imputation, and Particle Swarm Optimization (PSO) for feature selection, followed by an XGBoost classifier for high-performance prediction. The complete inference pipeline supports automated encoding/decoding, model serialization, and reproducible submission generation.",
+    skillsEarned: [
+      "Feature Selection Optimization",
+      "Gradient Boosting",
+      "Healthcare Data Modeling",
+      "Machine Learning Pipelines",
+      "Model Deployment & Serialization"
+    ],
+    techStack: [
+      "Python",
+      "XGBoost",
+      "scikit-learn",
+      "pandas",
+      "NumPy",
+      "joblib"
+    ],
+    categories: ["Data Science", "Healthcare Tech", "AI/ML"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=4"
+  },
+  {
+    id: "p9",
+    title: "AI-Powered Face Recognition Attendance System",
+    description: "A Python-based system that uses face recognition to automatically mark attendance, eliminating manual input and proxy attendance.",
+    longDescription: "This project implements a real-time face recognition attendance system using OpenCV and DeepFace. Users can register with multiple facial images, and the system verifies identities during daily attendance marking. The multi-page PyQt5 GUI provides intuitive workflows for registration, attendance tracking, and weekly statistics visualization. The system ensures high accuracy through augmentation and embedding-based matching, storing attendance records locally for auditing and analysis.",
+    skillsEarned: [
+      "Computer Vision",
+      "Face Recognition",
+      "Real-Time AI Systems",
+      "PyQt5 GUI Development",
+      "Data Handling & Visualization"
+    ],
+    techStack: [
+      "Python",
+      "OpenCV",
+      "DeepFace",
+      "PyQt5",
+      "NumPy",
+      "SciPy",
+      "Matplotlib"
+    ],
+    categories: ["AI/ML"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=11"
+  },
+  {
+    id: "p10",
+    title: "Smart Study Companion",
+    description: "A full-stack web application that helps students manage study sessions, take notes, and leverage AI-powered tools for personalized learning assistance.",
+    longDescription: "Smart Study Companion is designed to enhance students' productivity and learning outcomes. It features session tracking, organized note-taking, and a suite of AI tools including text summarization, study plan generation, flashcard creation, question answering, sentiment analysis, keyword extraction, and quiz generation. The platform also provides progress analytics and personalized recommendations. Built with Django REST Framework backend and React frontend, it integrates Hugging Face models like BART and DistilBERT for intelligent study assistance.",
+    skillsEarned: [
+      "Full-Stack Web Development",
+      "AI Integration",
+      "Natural Language Processing",
+      "Progress Analytics",
+      "JWT Authentication",
+      "REST API Design"
+    ],
+    techStack: [
+      "Django",
+      "Django REST Framework",
+      "React",
+      "React Router",
+      "SQLite / PostgreSQL",
+      "JWT",
+      "Hugging Face Transformers",
+      "PyTorch",
+      "CSS3",
+      "Vite"
+    ],
+    categories: ["Web & Full-Stack", "AI/ML"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=15"
+  },
+  {
+    id: "p11",
+    title: "Moot Society of Sri Lanka Law College - Official Website",
+    description: "A modern, responsive full-stack website built with Next.js and Strapi CMS to showcase events, achievements, news, and gallery for the Moot Society.",
+    longDescription: "This project delivers a dynamic, fully-responsive website for the Moot Society of Sri Lanka Law College, integrating a Next.js frontend with a Strapi CMS backend. The platform provides sections for events, achievements, news, gallery, FAQ, and contact information. Advanced UI features include scroll animations, lightbox galleries, and call-to-action components. Strapi enables content management with PostgreSQL/SQLite, media uploads via Cloudinary, and role-based authentication. The site is SEO-optimized, production-ready, and provides a seamless user experience across devices.",
+    skillsEarned: [
+      "Full-Stack Web Development",
+      "Headless CMS Integration",
+      "Responsive UI Design",
+      "SEO Optimization",
+      "Dynamic Content Management"
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Strapi CMS",
+      "PostgreSQL / SQLite",
+      "Cloudinary",
+      "Axios"
+    ],
+    categories: ["Web & Full-Stack"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=10"
+  },
+  {
+    id: "p12",
+    title: "eGOV Monorepo - Runbook and Config",
+    description: "A monorepo containing multiple Next.js apps for citizen services, admin management, and analytics, integrated with Supabase and Docker for full-stack development and deployment.",
+    longDescription: "This project provides a comprehensive e-Government platform with a Citizen Portal, Admin Portal, and Analytics Dashboard. Built as a Next.js monorepo with shared packages and Supabase Postgres backend (RLS-enabled), it supports secure, multi-role access. The repository includes local development guides, environment setup, Docker Compose for containerized dev, and database management with SQL scripts. It demonstrates large-scale full-stack architecture, multi-app coordination, and modern web deployment practices.",
+    skillsEarned: [
+      "Full-Stack Web Development",
+      "Monorepo Management",
+      "Supabase & PostgreSQL",
+      "Role-Based Access Control",
+      "Docker & DevOps Practices"
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Docker",
+      "Node.js",
+      "npm"
+    ],
+    categories: ["Web & Full-Stack"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=14"
+  },
+  {
+    id: "p13",
+    title: "Sumudu's ToDo List - Smart Android Task Manager",
+    description: "A modern Android ToDo application built with Jetpack Compose and Kotlin, featuring offline support, Firebase sync, and exact alarm-based reminders.",
+    longDescription: "Sumudu's ToDo List is a full-featured Android task management application designed with a clean MVVM architecture and modern Android development practices. The app supports multiple task lists, secure authentication via Firebase, and seamless cloud synchronization with Firestore. Local persistence is handled using Room to ensure offline functionality, while an exact alarm–based reminder system built with AlarmManager and BroadcastReceivers guarantees timely notifications that persist across device reboots. The UI is implemented using Jetpack Compose and Material Design 3, with adaptive light and dark theming.",
+    skillsEarned: [
+      "Android App Development",
+      "MVVM Architecture",
+      "Local & Cloud Data Synchronization",
+      "Exact Alarm Scheduling",
+      "Modern UI Design with Jetpack Compose"
+    ],
+    techStack: [
+      "Kotlin",
+      "Jetpack Compose",
+      "Room",
+      "Firebase Authentication",
+      "Firebase Firestore",
+      "Hilt",
+      "Coroutines & Flow",
+      "AlarmManager"
+    ],
+    categories: ["Mobile & Desktop"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=7"
+  },
+  {
+    id: "p14",
+    title: "Green AI — Sustainable AI Dashboard",
+    description: "A web platform built with Vue 3 and Django that visualizes AI model carbon emissions and cloud data center energy use to promote sustainable AI practices.",
+    longDescription: "Green AI is a full-stack application designed to raise awareness of AI's environmental impact. The Vue 3 frontend provides interactive maps and dashboards showing real-time carbon intensity, cloud data center sustainability metrics, and AI model emission estimates. The Django backend processes CSV datasets, generates server-side visualizations, and supports decision-making tools for low-carbon AI practices. Users can explore historical and real-time data, compare providers, and receive actionable recommendations to reduce AI-related carbon emissions.",
+    skillsEarned: [
+      "Full-Stack Web Development",
+      "Sustainability Analytics",
+      "Data Visualization",
+      "Carbon Footprint Estimation",
+      "API Integration"
+    ],
+    techStack: [
+      "Vue 3",
+      "Django",
+      "Python",
+      "Node.js",
+      "Pandas",
+      "Matplotlib",
+      "REST APIs"
+    ],
+    categories: ["Web & Full-Stack", "Data Science"],
+    github: "https://github.com/<your-repo-link>",
     image: "https://picsum.photos/600/400?random=12"
   },
-   {
-    id: "p6",
-    title: "AR Knowledge Overlay Prototype",
-    description: "Early prototype for visualizing Knowledge Graph nodes in AR space, allowing users to 'walk' through data connections.",
-    longDescription: "Developed using AR Foundation, this app detects horizontal planes and spawns 3D nodes representing data points. Users can tap nodes to expand their relationships, effectively creating a spatial mind-map. This explores the potential of 'Spatial Computing' for data analysis.",
-    skillsEarned: ["AR Foundation", "Spatial Mapping", "UI/UX for XR", "Mobile Optimization"],
-    techStack: ["AR Foundation", "Unity", "C#"],
-    category: "XR",
-    github: "https://github.com/Lilvamp237/ar-knowledge-graph",
+  {
+    id: "p15",
+    title: "Budget Buddy - Desktop Personal Finance Manager",
+    description: "A Java Swing-based desktop application for tracking income, expenses, and budgets through an intuitive graphical interface.",
+    longDescription: "Budget Buddy was developed as a second-year Object-Oriented Programming group assignment to apply core OOP concepts in a real-world context. Built entirely using Java and Swing, the application enables users to manage income and expense records, automatically calculate balances, and visualize budget summaries. The project follows an MVC-inspired modular structure and demonstrates event-driven programming, reusable GUI components, and local data handling with a foundation for future database integration.",
+    skillsEarned: [
+      "Object-Oriented Programming",
+      "Event-Driven Programming",
+      "GUI Design",
+      "MVC Architecture",
+      "Desktop Application Development"
+    ],
+    techStack: [
+      "Java",
+      "Swing",
+      "File I/O",
+      "MVC Pattern"
+    ],
+    categories: ["Mobile & Desktop"],
+    github: "https://github.com/<your-repo-link>",
     image: "https://picsum.photos/600/400?random=2"
-  }
+  },
+  {
+    id: "p16",
+    title: "Localloop - Full-Stack Service Integration Platform",
+    description: "A full-stack application demonstrating seamless REST-based communication between a Ballerina backend and a Vite-powered frontend.",
+    longDescription: "Localloop was developed for the Innovate with Ballerina 2025 competition to showcase modern service orchestration using Ballerina. The backend exposes RESTful APIs responsible for data processing and service logic, while the Vite frontend consumes these APIs to deliver a fast, responsive user interface. The project emphasizes clean separation between frontend and backend layers, real-time data flow, and practical API integration patterns using Ballerina.",
+    skillsEarned: [
+      "Service-Oriented Architecture",
+      "REST API Design",
+      "Full-Stack Integration",
+      "Backend-Frontend Communication"
+    ],
+    techStack: [
+      "Ballerina",
+      "Vite",
+      "JavaScript",
+      "REST APIs",
+      "Node.js"
+    ],
+    categories: ["Web & Full-Stack"],
+    github: "https://github.com/<your-repo-link>",
+    image: "https://picsum.photos/600/400?random=1"
+  },
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 export const PUBLICATIONS: Publication[] = [

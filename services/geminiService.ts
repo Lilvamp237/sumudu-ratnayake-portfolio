@@ -30,7 +30,7 @@ Certifications:
 ${CERTIFICATIONS.map(c => `- ${c.name} from ${c.provider} (${c.date})`).join('\n')}
 
 Projects:
-${PROJECTS.map(p => `- ${p.title} (${p.category}): ${p.description}. Tech: ${p.techStack.join(', ')}`).join('\n')}
+${PROJECTS.map(p => `- ${p.title} (${p.categories.join(', ')}): ${p.description}. Tech: ${p.techStack.join(', ')}`).join('\n')}
 
 Publications:
 ${PUBLICATIONS.map(p => `- [${p.status}] "${p.title}" presented at ${p.conference} (${p.date}). Summary: ${p.description}`).join('\n')}
