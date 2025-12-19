@@ -187,7 +187,7 @@ export const PROJECTS: Project[] = [
       "Plotly"
     ],
     categories: ["AI/ML", "Agent Systems"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/Bookstore-Management-System-with-Ontology-and-Multi-Agent-Simulation",
     image: "https://picsum.photos/600/400?random=5"
   },
   {
@@ -213,7 +213,7 @@ export const PROJECTS: Project[] = [
       "matplotlib"
     ],
     categories: ["AI/ML", "Mobile & Desktop"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/Audio-Denoising-System-using-Deep-Learning-and-PyQt-UI-",
     image: "https://picsum.photos/600/400?random=6"
   },
   {
@@ -240,7 +240,7 @@ export const PROJECTS: Project[] = [
       "Pickle"
     ],
     categories: ["Data Science", "AI/ML"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/telecom-churn-prediction",
     image: "https://picsum.photos/600/400?random=9"
   },
   {
@@ -268,7 +268,7 @@ export const PROJECTS: Project[] = [
       "Recharts"
     ],
     categories: ["Web & Full-Stack", "Data Science", "AI/ML"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/Smart-Home-Energy-Tracker",
     image: "https://picsum.photos/600/400?random=8"
   },
   {
@@ -322,7 +322,7 @@ export const PROJECTS: Project[] = [
       "PostgreSQL"
     ],
     categories: ["Healthcare Tech", "Web & Full-Stack"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/cww",
     image: "https://picsum.photos/600/400?random=13"
   },
   {
@@ -348,7 +348,7 @@ export const PROJECTS: Project[] = [
       "pickle"
     ],
     categories: ["AI/ML", "Data Science", "Agent Systems"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/Agentic-Based-Hotel-Booking-Guest-Experience-Optimizer",
     image: "https://picsum.photos/600/400?random=3"
   },
   {
@@ -372,7 +372,7 @@ export const PROJECTS: Project[] = [
       "joblib"
     ],
     categories: ["Data Science", "Healthcare Tech", "AI/ML"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/Mental-health-condition-related-to-drug-usage---Drug-Prediction",
     image: "https://picsum.photos/600/400?random=4"
   },
   {
@@ -397,7 +397,7 @@ export const PROJECTS: Project[] = [
       "Matplotlib"
     ],
     categories: ["AI/ML"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/face_recognition_attendance_system",
     image: "https://picsum.photos/600/400?random=11"
   },
   {
