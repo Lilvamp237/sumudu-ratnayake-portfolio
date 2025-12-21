@@ -426,7 +426,7 @@ export const PROJECTS: Project[] = [
       "Vite"
     ],
     categories: ["Web & Full-Stack", "AI/ML"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Wicky2002/smart-study-companion",
     image: "https://picsum.photos/600/400?random=15"
   },
   {
@@ -452,7 +452,7 @@ export const PROJECTS: Project[] = [
       "Axios"
     ],
     categories: ["Web & Full-Stack"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/moot-society-website",
     image: "https://picsum.photos/600/400?random=10"
   },
   {
@@ -478,7 +478,7 @@ export const PROJECTS: Project[] = [
       "npm"
     ],
     categories: ["Web & Full-Stack"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/HasinduNimesh/Mental-Breakdown_eGOV",
     image: "https://picsum.photos/600/400?random=14"
   },
   {
@@ -504,7 +504,7 @@ export const PROJECTS: Project[] = [
       "AlarmManager"
     ],
     categories: ["Mobile & Desktop"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/SumudusToDoList",
     image: "https://picsum.photos/600/400?random=7"
   },
   {
