@@ -91,6 +91,14 @@ export const EDUCATION: Experience[] = [
 export const CERTIFICATIONS: Certification[] = [
   {
     id: "c1",
+    name: "Machine Learning with Python Professional Certificate",
+    provider: "Anaconda Inc",
+    date: "Dec 2025",
+    badgeUrl: "/badges/anacondainc_logo.jpg",
+    verificationLink: "https://www.linkedin.com/learning/certificates/c285391c2d76739b9216d3120122d9d6a1a37e61f77870596c28fb045b3d1741?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BseFpg3nmQHSNR7H9asqEmQ%3D%3D"
+  },
+  {
+    id: "c2",
     name: "GitHub Copilot",
     provider: "Microsoft",
     date: "Dec 2025",
@@ -98,7 +106,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://learn.microsoft.com/api/credentials/share/en-us/Sumudu05-1888/7E05411E38180AC0?sharingId"
   },
   {
-    id: "c2",
+    id: "c3",
     name: "Neo4j Certified Professional",
     provider: "Neo4j",
     date: "Dec 2025",
@@ -106,7 +114,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://graphacademy.neo4j.com/c/1cf2e865-fa34-4ab9-be28-d889e67dbbb9/"
   },
   {
-    id: "c3",
+    id: "c4",
     name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
     provider: "Oracle",
     date: "Sep 2025",
@@ -114,7 +122,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=BCA92DFDF1EE5C98047C5CD7EF1090710F40E633B651CD271D84425D0981BF90"
   },
   {
-    id: "c4",
+    id: "c5",
     name: "Intro to Machine Learning",
     provider: "Kaggle",
     date: "Aug 2025",
@@ -122,7 +130,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://www.kaggle.com/learn/certification/sumuu237/intro-to-machine-learning"
   },
   {
-    id: "c5",
+    id: "c6",
     name: "Unity Essentials Pathway",
     provider: "Unity",
     date: "Jul 2025",
@@ -130,7 +138,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://www.credly.com/badges/20d7c767-4e53-460c-8d4c-192b02759373/linked_in_profile"
   },
   {
-    id: "c6",
+    id: "c7",
     name: "Postman API Fundamentals Student Expert",
     provider: "Postmanapi",
     date: "Feb 2025",
@@ -138,7 +146,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://api.badgr.io/public/assertions/yKS5WPrYQJC1nIIOwBfPUw"    
   },
   {
-    id: "c7",
+    id: "c8",
     name: "Microsoft Certified: Azure AI Fundamentals",
     provider: "Microsoft",
     date: "Feb 2023",
@@ -146,7 +154,7 @@ export const CERTIFICATIONS: Certification[] = [
     verificationLink: "https://www.credly.com/badges/e41626c1-8082-491c-a89e-391a0294e5dc/public_url"
   },
   {
-    id: "c8",
+    id: "c9",
     name: "CCNA: Introduction to Networks",
     provider: "Cisco",
     date: "Nov 2023",
@@ -529,7 +537,7 @@ export const PROJECTS: Project[] = [
       "REST APIs"
     ],
     categories: ["Web & Full-Stack", "Data Science"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/green-ai-new",
     image: "https://picsum.photos/600/400?random=12"
   },
   {
@@ -551,7 +559,7 @@ export const PROJECTS: Project[] = [
       "MVC Pattern"
     ],
     categories: ["Mobile & Desktop"],
-    github: "https://github.com/<your-repo-link>",
+    github: "https://github.com/Lilvamp237/Budget-Buddy---Financial-Tracker",
     image: "https://picsum.photos/600/400?random=2"
   },
   {
