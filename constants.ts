@@ -196,7 +196,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Agent Systems"],
     github: "https://github.com/Lilvamp237/Bookstore-Management-System-with-Ontology-and-Multi-Agent-Simulation",
-    image: "https://picsum.photos/600/400?random=5"
+    image: "/projects/bookstore-ontology.jpg"
   },
   {
     id: "p2",
@@ -222,7 +222,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Mobile & Desktop"],
     github: "https://github.com/Lilvamp237/Audio-Denoising-System-using-Deep-Learning-and-PyQt-UI-",
-    image: "https://picsum.photos/600/400?random=6"
+    image: "/projects/audio-denoising.jpg"
   },
   {
     id: "p3",
@@ -249,7 +249,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Data Science", "AI/ML"],
     github: "https://github.com/Lilvamp237/telecom-churn-prediction",
-    image: "https://picsum.photos/600/400?random=9"
+    image: "/projects/churn-prediction.jpg"
   },
   {
     id: "p4",
@@ -277,7 +277,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack", "Data Science", "AI/ML"],
     github: "https://github.com/Lilvamp237/Smart-Home-Energy-Tracker",
-    image: "https://picsum.photos/600/400?random=8"
+    image: "/projects/smart-energy.jpg"
   },
   {
     id: "p5",
@@ -305,7 +305,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Healthcare Tech", "Web & Full-Stack", "AI/ML"],
     github: "https://github.com/<your-repo-link>",
-    image: "https://picsum.photos/600/400?random=16"
+    image: "/projects/athena-dementia.jpg"
   },
   {
     id: "p6",
@@ -331,7 +331,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Healthcare Tech", "Web & Full-Stack"],
     github: "https://github.com/Lilvamp237/cww",
-    image: "https://picsum.photos/600/400?random=13"
+    image: "/projects/caresync.jpg"
   },
   {
     id: "p7",
@@ -357,7 +357,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Data Science", "Agent Systems"],
     github: "https://github.com/Lilvamp237/Agentic-Based-Hotel-Booking-Guest-Experience-Optimizer",
-    image: "https://picsum.photos/600/400?random=3"
+    image: "/projects/hotel-experience.jpg"
   },
   {
     id: "p8",
@@ -381,7 +381,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Data Science", "Healthcare Tech", "AI/ML"],
     github: "https://github.com/Lilvamp237/Mental-health-condition-related-to-drug-usage---Drug-Prediction",
-    image: "https://picsum.photos/600/400?random=4"
+    image: "/projects/drug-prediction.jpg"
   },
   {
     id: "p9",
@@ -406,7 +406,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML"],
     github: "https://github.com/Lilvamp237/face_recognition_attendance_system",
-    image: "https://picsum.photos/600/400?random=11"
+    image: "/projects/face-recognition.jpg"
   },
   {
     id: "p10",
@@ -435,7 +435,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack", "AI/ML"],
     github: "https://github.com/Wicky2002/smart-study-companion",
-    image: "https://picsum.photos/600/400?random=15"
+    image: "/projects/study-companion.jpg"
   },
   {
     id: "p11",
@@ -461,7 +461,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack"],
     github: "https://github.com/Lilvamp237/moot-society-website",
-    image: "https://picsum.photos/600/400?random=10"
+    image: "/projects/moot-society.jpg"
   },
   {
     id: "p12",
@@ -487,7 +487,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack"],
     github: "https://github.com/HasinduNimesh/Mental-Breakdown_eGOV",
-    image: "https://picsum.photos/600/400?random=14"
+    image: "/projects/egov-monorepo.jpg"
   },
   {
     id: "p13",
@@ -513,7 +513,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Mobile & Desktop"],
     github: "https://github.com/Lilvamp237/SumudusToDoList",
-    image: "https://picsum.photos/600/400?random=7"
+    image: "/projects/todo-android.jpg"
   },
   {
     id: "p14",
@@ -538,7 +538,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack", "Data Science"],
     github: "https://github.com/Lilvamp237/green-ai-new",
-    image: "https://picsum.photos/600/400?random=12"
+    image: "/projects/green-ai.jpg"
   },
   {
     id: "p15",
@@ -560,7 +560,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Mobile & Desktop"],
     github: "https://github.com/Lilvamp237/Budget-Buddy---Financial-Tracker",
-    image: "https://picsum.photos/600/400?random=2"
+    image: "/projects/budget-buddy.jpg"
   },
   {
     id: "p16",
@@ -582,7 +582,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack"],
     github: "https://github.com/<your-repo-link>",
-    image: "https://picsum.photos/600/400?random=1"
+    image: "/projects/localloop.jpg"
   },
 
   
