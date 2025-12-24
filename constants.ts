@@ -196,7 +196,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Agent Systems"],
     github: "https://github.com/Lilvamp237/Bookstore-Management-System-with-Ontology-and-Multi-Agent-Simulation",
-    image: "/projects/bookstore-ontology.jpg"
+    image: "/projects/bookstore-ontology.png"
   },
   {
     id: "p2",
@@ -222,7 +222,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Mobile & Desktop"],
     github: "https://github.com/Lilvamp237/Audio-Denoising-System-using-Deep-Learning-and-PyQt-UI-",
-    image: "/projects/audio-denoising.jpg"
+    image: "/projects/audio-denoising.png"
   },
   {
     id: "p3",
@@ -249,7 +249,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Data Science", "AI/ML"],
     github: "https://github.com/Lilvamp237/telecom-churn-prediction",
-    image: "/projects/churn-prediction.jpg"
+    image: "/projects/churn-prediction.png"
   },
   {
     id: "p4",
@@ -331,7 +331,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Healthcare Tech", "Web & Full-Stack"],
     github: "https://github.com/Lilvamp237/cww",
-    image: "/projects/caresync.jpg"
+    image: "/projects/caresync.png"
   },
   {
     id: "p7",
@@ -357,7 +357,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Data Science", "Agent Systems"],
     github: "https://github.com/Lilvamp237/Agentic-Based-Hotel-Booking-Guest-Experience-Optimizer",
-    image: "/projects/hotel-experience.jpg"
+    image: "/projects/hotel-experience.png"
   },
   {
     id: "p8",
@@ -406,7 +406,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML"],
     github: "https://github.com/Lilvamp237/face_recognition_attendance_system",
-    image: "/projects/face-recognition.jpg"
+    image: "/projects/face-recognition.png"
   },
   {
     id: "p10",
@@ -461,7 +461,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack"],
     github: "https://github.com/Lilvamp237/moot-society-website",
-    image: "/projects/moot-society.jpg"
+    image: "/projects/moot-society.png"
   },
   {
     id: "p12",
