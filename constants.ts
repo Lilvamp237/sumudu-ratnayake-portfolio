@@ -12,7 +12,7 @@ export const USER_INFO = {
   linkedin: "https://www.linkedin.com/in/sumudu-ratnayake-782b90235",
   github: "https://github.com/Lilvamp237",
   avatar: "https://github.com/Lilvamp237.png",
-  resume: "/cv/Sumudu Ratnayake_CV.pdf"
+  resume: "cv/Sumudu Ratnayake_CV.pdf"
 };
 
 // High-level competencies (Concepts)
@@ -94,7 +94,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Machine Learning with Python Professional Certificate",
     provider: "Anaconda Inc",
     date: "Dec 2025",
-    badgeUrl: "/badges/anacondainc_logo.jpg",
+    badgeUrl: "badges/anacondainc_logo.jpg",
     verificationLink: "https://www.linkedin.com/learning/certificates/c285391c2d76739b9216d3120122d9d6a1a37e61f77870596c28fb045b3d1741?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BseFpg3nmQHSNR7H9asqEmQ%3D%3D"
   },
   {
@@ -102,7 +102,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "GitHub Copilot",
     provider: "Microsoft",
     date: "Dec 2025",
-    badgeUrl: "/badges/copilot.png",
+    badgeUrl: "badges/copilot.png",
     verificationLink: "https://learn.microsoft.com/api/credentials/share/en-us/Sumudu05-1888/7E05411E38180AC0?sharingId"
   },
   {
@@ -110,7 +110,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Neo4j Certified Professional",
     provider: "Neo4j",
     date: "Dec 2025",
-    badgeUrl: "/badges/neo4j_logo.jpeg",
+    badgeUrl: "badges/neo4j_logo.jpeg",
     verificationLink: "https://graphacademy.neo4j.com/c/1cf2e865-fa34-4ab9-be28-d889e67dbbb9/"
   },
   {
@@ -118,7 +118,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
     provider: "Oracle",
     date: "Sep 2025",
-    badgeUrl: "/badges/OCI25AICFA.jpeg",
+    badgeUrl: "badges/OCI25AICFA.jpeg",
     verificationLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=BCA92DFDF1EE5C98047C5CD7EF1090710F40E633B651CD271D84425D0981BF90"
   },
   {
@@ -126,7 +126,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Intro to Machine Learning",
     provider: "Kaggle",
     date: "Aug 2025",
-    badgeUrl: "/badges/kaggle.jpeg",
+    badgeUrl: "badges/kaggle.jpeg",
     verificationLink: "https://www.kaggle.com/learn/certification/sumuu237/intro-to-machine-learning"
   },
   {
@@ -134,7 +134,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Unity Essentials Pathway",
     provider: "Unity",
     date: "Jul 2025",
-    badgeUrl: "/badges/unity-essentials-pathway.png",
+    badgeUrl: "badges/unity-essentials-pathway.png",
     verificationLink: "https://www.credly.com/badges/20d7c767-4e53-460c-8d4c-192b02759373/linked_in_profile"
   },
   {
@@ -150,7 +150,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Microsoft Certified: Azure AI Fundamentals",
     provider: "Microsoft",
     date: "Feb 2023",
-    badgeUrl: "/badges/microsoft-certified-azure-ai-fundamentals.png",
+    badgeUrl: "badges/microsoft-certified-azure-ai-fundamentals.png",
     verificationLink: "https://www.credly.com/badges/e41626c1-8082-491c-a89e-391a0294e5dc/public_url"
   },
   {
@@ -158,7 +158,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "CCNA: Introduction to Networks",
     provider: "Cisco",
     date: "Nov 2023",
-    badgeUrl: "/badges/cisco_logo.jpeg",
+    badgeUrl: "badges/cisco_logo.jpeg",
   }
   //{
     //id: "c8",
@@ -196,7 +196,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Agent Systems"],
     github: "https://github.com/Lilvamp237/Bookstore-Management-System-with-Ontology-and-Multi-Agent-Simulation",
-    image: "/projects/bookstore-ontology.png"
+    image: "projects/bookstore-ontology.png"
   },
   {
     id: "p2",
@@ -222,7 +222,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Mobile & Desktop"],
     github: "https://github.com/Lilvamp237/Audio-Denoising-System-using-Deep-Learning-and-PyQt-UI-",
-    image: "/projects/audio-denoising.png"
+    image: "projects/audio-denoising.png"
   },
   {
     id: "p3",
@@ -249,7 +249,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Data Science", "AI/ML"],
     github: "https://github.com/Lilvamp237/telecom-churn-prediction",
-    image: "/projects/churn-prediction.png"
+    image: "projects/churn-prediction.png"
   },
   {
     id: "p4",
@@ -277,7 +277,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack", "Data Science", "AI/ML"],
     github: "https://github.com/Lilvamp237/Smart-Home-Energy-Tracker",
-    image: "/projects/smart-energy.jpg"
+    image: "projects/smart-energy.jpg"
   },
   {
     id: "p5",
@@ -305,7 +305,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Healthcare Tech", "Web & Full-Stack", "AI/ML"],
     github: "https://github.com/<your-repo-link>",
-    image: "/projects/athena-dementia.jpg"
+    image: "projects/athena-dementia.jpg"
   },
   {
     id: "p6",
@@ -331,7 +331,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Healthcare Tech", "Web & Full-Stack"],
     github: "https://github.com/Lilvamp237/cww",
-    image: "/projects/caresync.png"
+    image: "projects/caresync.png"
   },
   {
     id: "p7",
@@ -357,7 +357,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML", "Data Science", "Agent Systems"],
     github: "https://github.com/Lilvamp237/Agentic-Based-Hotel-Booking-Guest-Experience-Optimizer",
-    image: "/projects/hotel-experience.png"
+    image: "projects/hotel-experience.png"
   },
   {
     id: "p8",
@@ -381,7 +381,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Data Science", "Healthcare Tech", "AI/ML"],
     github: "https://github.com/Lilvamp237/Mental-health-condition-related-to-drug-usage---Drug-Prediction",
-    image: "/projects/drug-prediction.jpg"
+    image: "projects/drug-prediction.jpg"
   },
   {
     id: "p9",
@@ -406,7 +406,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["AI/ML"],
     github: "https://github.com/Lilvamp237/face_recognition_attendance_system",
-    image: "/projects/face-recognition.png"
+    image: "projects/face-recognition.png"
   },
   {
     id: "p10",
@@ -435,7 +435,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack", "AI/ML"],
     github: "https://github.com/Wicky2002/smart-study-companion",
-    image: "/projects/study-companion.jpg"
+    image: "projects/study-companion.jpg"
   },
   {
     id: "p11",
@@ -461,7 +461,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack"],
     github: "https://github.com/Lilvamp237/moot-society-website",
-    image: "/projects/moot-society.png"
+    image: "projects/moot-society.png"
   },
   {
     id: "p12",
@@ -487,7 +487,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack"],
     github: "https://github.com/HasinduNimesh/Mental-Breakdown_eGOV",
-    image: "/projects/egov-monorepo.jpg"
+    image: "projects/egov-monorepo.jpg"
   },
   {
     id: "p13",
@@ -513,7 +513,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Mobile & Desktop"],
     github: "https://github.com/Lilvamp237/SumudusToDoList",
-    image: "/projects/todo-android.jpg"
+    image: "projects/todo-android.jpg"
   },
   {
     id: "p14",
@@ -538,7 +538,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack", "Data Science"],
     github: "https://github.com/Lilvamp237/green-ai-new",
-    image: "/projects/green-ai.jpg"
+    image: "projects/green-ai.jpg"
   },
   {
     id: "p15",
@@ -560,7 +560,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Mobile & Desktop"],
     github: "https://github.com/Lilvamp237/Budget-Buddy---Financial-Tracker",
-    image: "/projects/budget-buddy.jpg"
+    image: "projects/budget-buddy.jpg"
   },
   {
     id: "p16",
@@ -582,7 +582,7 @@ export const PROJECTS: Project[] = [
     ],
     categories: ["Web & Full-Stack"],
     github: "https://github.com/<your-repo-link>",
-    image: "/projects/localloop.jpg"
+    image: "projects/localloop.jpg"
   },
 
   
