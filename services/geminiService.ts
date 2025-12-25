@@ -59,7 +59,7 @@ try {
 
 export const generateResponse = async (userMessage: string): Promise<string> => {
   if (!ai) {
-    return "Error: API_KEY not configured. Neural link offline.";
+    return "⚠️ AI Assistant is currently offline. The API key is not configured in this deployment environment. For a live demo, please contact Sumudu directly or clone the repository and add your own Gemini API key.";
   }
 
   try {
@@ -74,6 +74,6 @@ export const generateResponse = async (userMessage: string): Promise<string> => 
     return response.text || "No response data available.";
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "Critial Error: Connection to AI Core interrupted.";
+    return "⚠️ Critical Error: Connection to AI Core interrupted. The API may be rate-limited or the key is invalid.";
   }
 };
