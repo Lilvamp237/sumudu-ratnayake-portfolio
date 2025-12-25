@@ -465,8 +465,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "p12",
-    title: "eGOV Monorepo - Runbook and Config",
-    description: "A monorepo containing multiple Next.js apps for citizen services, admin management, and analytics, integrated with Supabase and Docker for full-stack development and deployment.",
+    title: "eGOV",
+    description: "An app for citizen services, admin management, and analytics, integrated with Supabase and Docker for full-stack development and deployment.",
     longDescription: "This project provides a comprehensive e-Government platform with a Citizen Portal, Admin Portal, and Analytics Dashboard. Built as a Next.js monorepo with shared packages and Supabase Postgres backend (RLS-enabled), it supports secure, multi-role access. The repository includes local development guides, environment setup, Docker Compose for containerized dev, and database management with SQL scripts. It demonstrates large-scale full-stack architecture, multi-app coordination, and modern web deployment practices.",
     skillsEarned: [
       "Full-Stack Web Development",
