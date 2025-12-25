@@ -142,7 +142,7 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Postman API Fundamentals Student Expert",
     provider: "Postmanapi",
     date: "Feb 2025",
-    badgeUrl: "badges/postman.jpeg",
+    badgeUrl: "badges/Postman.jpeg",
     verificationLink: "https://api.badgr.io/public/assertions/yKS5WPrYQJC1nIIOwBfPUw"    
   },
   {
