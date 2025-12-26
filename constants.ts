@@ -609,6 +609,14 @@ export const PROJECTS: Project[] = [
 ];
 
 export const PUBLICATIONS: Publication[] = [
+  /*{
+    title: "AI-Driven Inclusive Digital Infrastructure: A Unified Cognitive Load Framework for Accessible Smart Education in Sustainable Cities",
+    conference: "International Conference on Sustainable Developments in Computer Engineering, Green Technology & Smart Systems - Hooghly Engineering & Technology College",
+    date: "Dec 2025",
+    description: "Proposed an AI-driven accessibility framework for Smart Cities using a Unified Cognitive Load Framework (UCLF) that dynamically adapts multimodal content for Deaf/Hard of Hearing and Blind/Visually Impaired users. The system leverages transformer-based adaptation engines and real-time cognitive load estimation to enable inclusive, scalable, and edge-compatible accessibility beyond static compliance.",
+    //link: "https://irc.kdu.ac.lk/2025/documents/2025/abstracts/irc25_abstract_book_foc.pdf",
+    status: "Published"
+  },*/
   {
     title: "Designing Sleepzy: A Mobile Interface for Lucid Dream Induction via Smart Pillow Technology",
     conference: "18th International Research Conference - General Sir John Kotelawala Defence University",
