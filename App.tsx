@@ -175,7 +175,7 @@ const App: React.FC = () => {
                     <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
                     SYSTEM IDENTITY
                   </h2>
-                  <p className="text-slate-300 leading-relaxed font-mono">
+                  <p className="text-slate-300 leading-relaxed font-mono text-justify">
                     {USER_INFO.about}
                   </p>
                </div>
