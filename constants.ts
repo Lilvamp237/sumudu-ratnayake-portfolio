@@ -20,7 +20,7 @@ export const SKILLS: Skill[] = [
   // AI/ML
   { name: "Classical Machine Learning", level: 50, category: "AI/ML" },
   { name: "Deep Learning & Neural Networks", level: 45, category: "AI/ML" },
-  { name: "Retrieval-Augmented Generation (RAG)", level: 10, category: "AI/ML" },
+  { name: "Retrieval-Augmented Generation (RAG)", level: 40, category: "AI/ML" },
   { name: "Ensemble Methods & Random Forests", level: 45, category: "AI/ML" },
   { name: "Multi-Agent Systems", level: 35, category: "AI/ML" },
   { name: "Model Deployment (Streamlit)", level: 60, category: "AI/ML" },
