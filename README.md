@@ -107,7 +107,6 @@ The chat uses Google Gemini AI with RAG (Retrieval-Augmented Generation) for con
 ## 📫 Contact
 
 - **Email**: ishadi.leoni@gmail.com
-- **Phone**: +94 76 645 4318
 - **Location**: Sri Lanka
 - **LinkedIn**: [Sumudu Ratnayake](https://linkedin.com/in/sumudu-ratnayake-782b90235)
 - **GitHub**: [@Lilvamp237](https://github.com/Lilvamp237)
