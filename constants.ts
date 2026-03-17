@@ -12,7 +12,7 @@ export const USER_INFO = {
   linkedin: "https://www.linkedin.com/in/sumudu-ratnayake-782b90235",
   github: "https://github.com/Lilvamp237",
   avatar: "https://github.com/Lilvamp237.png",
-  resume: "cv/Sumudu Ratnayake_CV.pdf"
+  resume: "cv/Sumudu Ratnayake - Resume.pdf"
 };
 
 // High-level competencies (Concepts)
