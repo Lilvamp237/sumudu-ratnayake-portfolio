@@ -72,3 +72,64 @@ export interface ChatMessage {
   text: string;
   timestamp: Date;
 }
+
+export type ProjectStatus = 'Active' | 'Completed' | 'Research' | 'Needs details';
+
+export interface CaseStudy {
+  slug: string;
+  title: string;
+  label: string;
+  summary: string;
+  problem?: string;
+  context?: string;
+  role?: string;
+  process?: string[];
+  implementation?: string;
+  technologies: string[];
+  outcome?: string;
+  lessons?: string;
+  image?: string;
+  repository?: string;
+  publication?: string;
+  presentation?: string;
+  status: ProjectStatus;
+  featured?: boolean;
+  needs?: string[];
+}
+
+export interface ResearchEntry {
+  slug: string;
+  title: string;
+  authors?: string;
+  venue: string;
+  year: string;
+  status: 'Published' | 'Accepted' | 'Ongoing' | 'Needs review';
+  summary: string;
+  paper?: string;
+  presentation?: string;
+  project?: string;
+  proceeding?: string;
+  citation?: string;
+  needs?: string[];
+}
+
+export type PostBlock =
+  | { type: 'paragraph'; text: string }
+  | { type: 'heading'; text: string }
+  | { type: 'quote'; text: string }
+  | { type: 'code'; language: string; code: string }
+  | { type: 'image'; src: string; alt: string };
+
+export interface WritingPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: 'Journey' | 'Build Logs' | 'Research Rabbit Holes' | 'Reflections' | 'AI' | 'Open Source' | 'Startups';
+  tags: string[];
+  date?: string;
+  readingTime?: string;
+  featured?: boolean;
+  status: 'Planned' | 'Draft' | 'Published';
+  outline: string[];
+  blocks?: PostBlock[];
+}

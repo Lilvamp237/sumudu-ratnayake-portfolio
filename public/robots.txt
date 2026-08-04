@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lilvamp237.github.io/sumudu-ratnayake-portfolio/sitemap.xml
