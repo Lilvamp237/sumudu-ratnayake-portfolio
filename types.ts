@@ -88,6 +88,7 @@ export interface CaseStudy {
   technologies: string[];
   outcome?: string;
   lessons?: string;
+  team?: string[];
   image?: string;
   repository?: string;
   publication?: string;
@@ -103,6 +104,8 @@ export interface ResearchEntry {
   authors?: string;
   venue: string;
   year: string;
+  date?: string;
+  typeNote?: string;
   status: 'Published' | 'Accepted' | 'Ongoing' | 'Needs review';
   summary: string;
   paper?: string;

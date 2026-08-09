@@ -59,6 +59,6 @@ export function PageIntro({ eyebrow, title, children }: { eyebrow: string; title
   return <header className="page-intro reveal"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><div className="page-lede">{children}</div></header>;
 }
 
-export function SectionHeading({ index, title, link }: { index: string; title: string; link?: { label: string; href: string } }) {
-  return <div className="section-heading"><p><span>{index}</span> {title}</p>{link && <a className="text-link" href={link.href}>{link.label} <ArrowUpRight size={15} /></a>}</div>;
+export function SectionHeading({ index, title, link }: { index?: string; title: string; link?: { label: string; href: string } }) {
+  return <div className="section-heading"><p>{index && <span>{index}</span>} {title}</p>{link && <a className="text-link" href={link.href}>{link.label} <ArrowUpRight size={15} /></a>}</div>;
 }
