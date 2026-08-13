@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found, Sumudu Ratnayake</title>
+    <script>
+      // GitHub Pages has no server-side rewrites, so a direct load of a
+      // nested route (e.g. /sumudu-ratnayake-portfolio/projects/foo) hits
+      // this 404 page. Redirect it back to index.html with the intended
+      // path encoded in the query string; index.html decodes it before the
+      // app boots. Not needed on Vercel (vercel.json rewrites handle it),
+      // but harmless there too since this file is never served for valid
+      // routes on that host.
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+    <style>
+      :root { color-scheme: light dark; font-family: ui-sans-serif, system-ui, sans-serif; }
+      body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #f4f1ea; color: #1d1c20; }
+      main { width: min(90%, 720px); }
+      p:first-child { color: #6550a5; text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; }
+      h1 { font: 500 clamp(3rem, 10vw, 6rem)/1 Georgia, serif; letter-spacing: -.05em; }
+      a { display: inline-block; margin-top: 20px; padding: 12px 18px; color: white; background: #493681; border-radius: 999px; text-decoration: none; }
+      @media (prefers-color-scheme: dark) { body { background: #17161a; color: #f1eee8; } }
+    </style>
+  </head>
+  <body><main><p>404, Unmapped territory</p><h1>This page is not part of the system yet.</h1><p>The link may be old, or the idea may still be waiting to become real.</p><a href="/sumudu-ratnayake-portfolio/">Return home</a></main></body>
+</html>
