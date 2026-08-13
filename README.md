@@ -52,3 +52,4 @@ npm run deploy
 `npm run deploy` runs `vite build --mode gh-pages` (using the `/sumudu-ratnayake-portfolio/` base path) and pushes the built `dist/` directory to the `gh-pages` branch via the `gh-pages` package. Keep the base path in `vite.config.ts` aligned with the GitHub repository name if it ever changes.
 
 Because GitHub Pages has no server-side rewrite support, `public/404.html` implements the standard SPA-on-GitHub-Pages redirect trick: a direct load of a nested route (e.g. `/sumudu-ratnayake-portfolio/projects/dengue-allocator`) is redirected to `index.html` with the intended path encoded in the query string, which a small inline script in `index.html` decodes before the app boots. This is a no-op on Vercel.
+
