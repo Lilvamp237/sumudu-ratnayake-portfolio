@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Layout } from './components/SiteChrome';
 import { AboutPage, ContactPage, CurrentlyPage, HomePage, NotFoundPage, PostPage, ProjectPage, ProjectsPage, ResearchPage, ToolkitPage, WritingPage } from './pages/PortfolioPages';
-import { readRoute, scrollToPageTop } from './utils/router';
+import { navigate, readRoute, scrollToPageTop } from './utils/router';
 import './index.css';
 
 const metadata: Record<string, [string, string]> = {
@@ -31,9 +32,23 @@ export default function App() {
   const previousPath = useRef(route.path);
 
   useEffect(() => {
-    const onHashChange = () => setRoute(readRoute());
-    window.addEventListener('hashchange', onHashChange);
-    return () => window.removeEventListener('hashchange', onHashChange);
+    const onPopState = () => setRoute(readRoute());
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  useEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const anchor = (event.target as HTMLElement)?.closest('a');
+      if (!anchor) return;
+      const href = anchor.getAttribute('href');
+      if (!href || !href.startsWith('/') || anchor.target === '_blank' || anchor.hasAttribute('download')) return;
+      event.preventDefault();
+      navigate(href);
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
   }, []);
 
   useEffect(() => {
@@ -56,5 +71,5 @@ export default function App() {
   else if (root === 'currently' && !slug) page = <CurrentlyPage />;
   else if (root === 'contact' && !slug) page = <ContactPage />;
 
-  return <Layout activePath={route.path}>{page}</Layout>;
+  return <><Layout activePath={route.path}>{page}</Layout><Analytics /></>;
 }

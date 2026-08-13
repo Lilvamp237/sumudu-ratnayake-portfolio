@@ -1,13 +1,19 @@
 export type Route = { path: string; segments: string[] };
 
-export function readRoute(hash = window.location.hash): Route {
-  const raw = hash.replace(/^#/, '') || '/';
-  const path = `/${raw.replace(/^\/+|\/+$/g, '')}`.replace('//', '/');
+export function readRoute(pathname = window.location.pathname): Route {
+  const path = `/${pathname.replace(/^\/+|\/+$/g, '')}`.replace('//', '/');
   return { path, segments: path.split('/').filter(Boolean) };
 }
 
 export function pageHref(path: string) {
-  return `#${path.startsWith('/') ? path : `/${path}`}`;
+  return path.startsWith('/') ? path : `/${path}`;
+}
+
+export function navigate(path: string) {
+  const href = pageHref(path);
+  if (href === window.location.pathname) return;
+  window.history.pushState(null, '', href);
+  window.dispatchEvent(new PopStateEvent('popstate'));
 }
 
 export function scrollToPageTop() {
