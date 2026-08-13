@@ -8,7 +8,7 @@ const requiredFiles = [
   'public/sitemap.xml',
   'public/rss.xml',
   'public/404.html',
-  'public/cv/Sumudu Ratnayake - Resume.pdf',
+  'public/cv/Sumudu Ishadi Ratnayake.pdf',
 ];
 
 const missing = requiredFiles.filter((file) => !existsSync(file));
