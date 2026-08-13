@@ -91,6 +91,7 @@ export interface CaseStudy {
   lessons?: string;
   team?: string[];
   image?: string;
+  initials?: string;
   repository?: string;
   publication?: string;
   presentation?: string;

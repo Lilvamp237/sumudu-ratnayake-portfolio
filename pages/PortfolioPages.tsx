@@ -14,7 +14,7 @@ function PlaceholderNote({ items, compact = false }: { items?: string[]; compact
 }
 
 function ProjectVisual({ project, priority = false }: { project: CaseStudy; priority?: boolean }) {
-  if (!project.image) return <div className="project-visual project-visual-fallback" aria-label={`${project.title} image placeholder`}><span>{project.label}</span><strong>{project.title.slice(0, 2).toUpperCase()}</strong></div>;
+  if (!project.image) return <div className="project-visual project-visual-fallback" aria-label={`${project.title} image placeholder`}><span>{project.label}</span><strong>{project.initials ?? project.title.slice(0, 2).toUpperCase()}</strong></div>;
   return <div className="project-visual"><img src={project.image} alt={`${project.title} project preview`} loading={priority ? 'eager' : 'lazy'} /></div>;
 }
 
