@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Sumudu Ratnayake — Writing</title>
+    <link>https://lilvamp237.github.io/sumudu-ratnayake-portfolio/#/writing</link>
+    <description>Build logs, research rabbit holes, and reflections on learning through building.</description>
+    <language>en</language>
+    <item>
+      <title>The Joy of Seeing Something I Built Actually Work</title>
+      <link>https://lilvamp237.github.io/sumudu-ratnayake-portfolio/#/writing/the-joy-of-seeing-something-work</link>
+      <guid>writing/the-joy-of-seeing-something-work</guid>
+      <description>Planned article preview. Publication date and full article are still to be supplied.</description>
+    </item>
+    <item>
+      <title>Learning Programming Before AI</title>
+      <link>https://lilvamp237.github.io/sumudu-ratnayake-portfolio/#/writing/learning-programming-before-ai</link>
+      <guid>writing/learning-programming-before-ai</guid>
+      <description>Planned article preview. Publication date and full article are still to be supplied.</description>
+    </item>
+  </channel>
+</rss>
