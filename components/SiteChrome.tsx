@@ -25,7 +25,7 @@ export function Header({ activePath }: { activePath: string }) {
   useEffect(() => setOpen(false), [activePath]);
   return (
     <header className="site-header">
-      <a className="brand" href={pageHref('/')} aria-label="Sumudu Ratnayake — home"><span className="brand-mark" aria-hidden="true">SR</span><span>Sumudu Ratnayake</span></a>
+      <a className="brand" href={pageHref('/')} aria-label="Sumudu Ratnayake, home"><span className="brand-mark" aria-hidden="true">SR</span><span>Sumudu Ratnayake</span></a>
       <button className="icon-button menu-button" type="button" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="site-navigation" aria-label="Toggle navigation">{open ? <X size={20} /> : <Menu size={20} />}</button>
       <nav id="site-navigation" className={open ? 'site-nav is-open' : 'site-nav'} aria-label="Primary navigation">
         {navigation.map((item) => {
@@ -41,7 +41,7 @@ export function Header({ activePath }: { activePath: string }) {
 export function Footer() {
   return (
     <footer className="site-footer">
-      <div><p className="footer-line">Ideas are better when they become things.</p><p className="muted">Designed and built by Sumudu Ratnayake.</p></div>
+      <div><p className="footer-line">Ideas are better when they become things.</p><p className="muted">&copy; {new Date().getFullYear()} Sumudu Ratnayake. All rights reserved.</p></div>
       <div className="footer-links">
         <a href={site.github} target="_blank" rel="noreferrer"><Github size={16} /> GitHub <ArrowUpRight size={14} /></a>
         <a href={site.linkedin} target="_blank" rel="noreferrer"><Linkedin size={16} /> LinkedIn <ArrowUpRight size={14} /></a>

@@ -86,6 +86,7 @@ export interface CaseStudy {
   process?: string[];
   implementation?: string;
   technologies: string[];
+  categories?: string[];
   outcome?: string;
   lessons?: string;
   team?: string[];
