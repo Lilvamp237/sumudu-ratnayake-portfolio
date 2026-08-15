@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, Download, Github, Linkedin, Mail, 
 import { achievements, certifications, community, currently, education, experience, projects, publications, researchInterests, site, techStack, writing } from '../content/site';
 import { ContentBlocks } from '../components/ContentBlocks';
 import { PageIntro, SectionHeading } from '../components/SiteChrome';
-import { pageHref } from '../utils/router';
+import { asset, pageHref } from '../utils/router';
 import type { CaseStudy, WritingPost } from '../types';
 
 const linkIcon = <ArrowUpRight size={15} aria-hidden="true" />;
@@ -15,7 +15,7 @@ function PlaceholderNote({ items, compact = false }: { items?: string[]; compact
 
 function ProjectVisual({ project, priority = false }: { project: CaseStudy; priority?: boolean }) {
   if (!project.image) return <div className="project-visual project-visual-fallback" aria-label={`${project.title} image placeholder`}><span>{project.label}</span><strong>{project.initials ?? project.title.slice(0, 2).toUpperCase()}</strong></div>;
-  return <div className="project-visual"><img src={project.image} alt={`${project.title} project preview`} loading={priority ? 'eager' : 'lazy'} /></div>;
+  return <div className="project-visual"><img src={asset(project.image)} alt={`${project.title} project preview`} loading={priority ? 'eager' : 'lazy'} /></div>;
 }
 
 function HeroDiagram() {
@@ -54,7 +54,7 @@ export function HomePage() {
     <section className="hero reveal">
       <div className="hero-copy"><p className="eyebrow">Sumudu Ratnayake · Software engineer & researcher</p><h1>{site.headline}</h1><p className="hero-subhead">{site.subhead}</p>
         <div className="button-row"><a className="button primary" href={pageHref('/projects')}>Explore selected work <ArrowRight size={17} /></a><a className="button" href={pageHref('/research')}>Read the research</a></div>
-        <div className="hero-links" aria-label="Profile links"><a href={pageHref('/writing')}>Blog {linkIcon}</a><a href={site.github} target="_blank" rel="noreferrer">GitHub {linkIcon}</a><a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn {linkIcon}</a><a href={site.cv} target="_blank" rel="noreferrer">CV {linkIcon}</a></div>
+        <div className="hero-links" aria-label="Profile links"><a href={pageHref('/writing')}>Blog {linkIcon}</a><a href={site.github} target="_blank" rel="noreferrer">GitHub {linkIcon}</a><a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn {linkIcon}</a><a href={asset(site.cv)} target="_blank" rel="noreferrer">CV {linkIcon}</a></div>
       </div>
       <HeroDiagram />
     </section>
@@ -71,7 +71,7 @@ export function HomePage() {
 export function AboutPage() {
   return <>
     <PageIntro eyebrow="About · The path so far" title="The common thread is building to understand."><p>I came to computer science through mathematics, data, AI, and the possibility of making an idea behave in the real world.</p></PageIntro>
-    <section className="story-layout section-pad reveal"><aside className="story-margin"><img src={site.avatar} alt="Sumudu Ratnayake" /><p><MapPin size={15} /> {site.location}</p><p>Software engineer<br />Researcher<br />Curious builder</p></aside><div className="story prose">
+    <section className="story-layout section-pad reveal"><aside className="story-margin"><img src={asset(site.avatar)} alt="Sumudu Ratnayake" /><p><MapPin size={15} /> {site.location}</p><p>Software engineer<br />Researcher<br />Curious builder</p></aside><div className="story prose">
       <p>My interest in computers goes back to primary school, but I didn't get serious about it until my O/Ls, when I taught myself HTML and CSS. In my A/Ls, I went further, Python, PHP, and SQL, and that is when things clicked: even small programs could turn an idea into something visible and useful, a terminal application, a point-of-sale system, a working answer to a question I had only just learned how to ask.</p>
       <p>What drew me into Computer Science was the mix: mathematics and data, artificial intelligence and research, but also the practical satisfaction of building.</p>
       <p>This was before generative AI tools became part of everyday development. I learned from books, documentation, articles, YouTube, Stack Overflow, experiments, and plenty of debugging. When AI tools became common around the middle of university, I deliberately kept them out of my early work on object-oriented programming and data structures in Java. I wanted those foundations to be mine.</p>
@@ -157,7 +157,7 @@ export function CurrentlyPage() {
 }
 
 export function ContactPage() {
-  return <><PageIntro eyebrow="Contact · Start a conversation" title="Have an interesting problem, question, or system to build?"><p>I am open to conversations about research, software, intelligent agents, semantic systems, accessibility, open source, and thoughtful startup work.</p></PageIntro><section className="contact-grid reveal"><a href={`mailto:${site.email}`}><Mail size={22} /><div><p className="eyebrow">Email</p><h2>{site.email}</h2><p>Best for project and research enquiries.</p></div>{linkIcon}</a><a href={site.linkedin} target="_blank" rel="noreferrer"><Linkedin size={22} /><div><p className="eyebrow">LinkedIn</p><h2>Connect professionally</h2><p>Experience, updates, and conversation.</p></div>{linkIcon}</a><a href={site.github} target="_blank" rel="noreferrer"><Github size={22} /><div><p className="eyebrow">GitHub</p><h2>@Lilvamp237</h2><p>Repositories and experiments.</p></div>{linkIcon}</a><a href={site.cv} target="_blank" rel="noreferrer"><Download size={22} /><div><p className="eyebrow">CV</p><h2>Download résumé</h2><p>The full picture, one download away.</p></div>{linkIcon}</a></section></>;
+  return <><PageIntro eyebrow="Contact · Start a conversation" title="Have an interesting problem, question, or system to build?"><p>I am open to conversations about research, software, intelligent agents, semantic systems, accessibility, open source, and thoughtful startup work.</p></PageIntro><section className="contact-grid reveal"><a href={`mailto:${site.email}`}><Mail size={22} /><div><p className="eyebrow">Email</p><h2>{site.email}</h2><p>Best for project and research enquiries.</p></div>{linkIcon}</a><a href={site.linkedin} target="_blank" rel="noreferrer"><Linkedin size={22} /><div><p className="eyebrow">LinkedIn</p><h2>Connect professionally</h2><p>Experience, updates, and conversation.</p></div>{linkIcon}</a><a href={site.github} target="_blank" rel="noreferrer"><Github size={22} /><div><p className="eyebrow">GitHub</p><h2>@Lilvamp237</h2><p>Repositories and experiments.</p></div>{linkIcon}</a><a href={asset(site.cv)} target="_blank" rel="noreferrer"><Download size={22} /><div><p className="eyebrow">CV</p><h2>Download résumé</h2><p>The full picture, one download away.</p></div>{linkIcon}</a></section></>;
 }
 
 function ContactCallout() {

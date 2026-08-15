@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { PostBlock } from '../types';
+import { asset } from '../utils/router';
 
 function renderInline(text: string): ReactNode[] {
   const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).filter(Boolean);
@@ -15,7 +16,7 @@ export function ContentBlocks({ blocks = [] }: { blocks?: PostBlock[] }) {
     if (block.type === 'heading') return <h2 key={index}>{renderInline(block.text)}</h2>;
     if (block.type === 'quote') return <blockquote key={index}>{renderInline(block.text)}</blockquote>;
     if (block.type === 'code') return <pre key={index} data-language={block.language}><code>{block.code}</code></pre>;
-    if (block.type === 'image') return <figure key={index}><img src={block.src} alt={block.alt} loading="lazy" /></figure>;
+    if (block.type === 'image') return <figure key={index}><img src={asset(block.src)} alt={block.alt} loading="lazy" /></figure>;
     return <p key={index}>{renderInline(block.text)}</p>;
   })}</div>;
 }

@@ -1,12 +1,24 @@
 export type Route = { path: string; segments: string[] };
 
+// Vite bakes this in at build time: '/' on Vercel, '/sumudu-ratnayake-portfolio/' on GitHub Pages.
+const BASE = import.meta.env.BASE_URL;
+const BASE_PATH = BASE.replace(/\/+$/, ''); // '' for root base, '/sumudu-ratnayake-portfolio' for the subpath
+
 export function readRoute(pathname = window.location.pathname): Route {
-  const path = `/${pathname.replace(/^\/+|\/+$/g, '')}`.replace('//', '/');
+  let relative = pathname;
+  if (BASE_PATH && relative.startsWith(BASE_PATH)) relative = relative.slice(BASE_PATH.length);
+  const path = `/${relative.replace(/^\/+|\/+$/g, '')}`.replace('//', '/');
   return { path, segments: path.split('/').filter(Boolean) };
 }
 
 export function pageHref(path: string) {
-  return path.startsWith('/') ? path : `/${path}`;
+  const clean = path.startsWith('/') ? path.slice(1) : path;
+  return (BASE + clean).replace(/\/{2,}/g, '/') || BASE;
+}
+
+export function asset(path: string) {
+  const clean = path.startsWith('/') ? path.slice(1) : path;
+  return (BASE + clean).replace(/\/{2,}/g, '/');
 }
 
 export function navigate(path: string) {
