@@ -35,6 +35,25 @@
         }
       })(window.location);
     </script>
+    <script>
+      // Cloudflare Web Analytics, loaded with the token matching whichever
+      // host is currently serving the page, so Vercel and GitHub Pages
+      // report as separate sites in the Cloudflare dashboard. Skipped on
+      // localhost so local dev doesn't pollute either.
+      (function () {
+        var tokens = {
+          'sumudu-ratnayake-portfolio.vercel.app': 'a41f960d175e4e86b4a03a2151d4859a',
+          'lilvamp237.github.io': '33f9124dcdf54ef1afc483afc3c4f43b',
+        };
+        var token = tokens[window.location.hostname];
+        if (!token) return;
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        script.setAttribute('data-cf-beacon', JSON.stringify({ token: token }));
+        document.head.appendChild(script);
+      })();
+    </script>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
