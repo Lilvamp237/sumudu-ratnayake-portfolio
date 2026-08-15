@@ -21,8 +21,10 @@ export function asset(path: string) {
   return (BASE + clean).replace(/\/{2,}/g, '/');
 }
 
-export function navigate(path: string) {
-  const href = pageHref(path);
+// `href` is expected to already be a real href (e.g. from an anchor's
+// `href` attribute, which was itself built via `pageHref`) — do not run it
+// through `pageHref` again here, or the base path gets applied twice.
+export function navigate(href: string) {
   if (href === window.location.pathname) return;
   window.history.pushState(null, '', href);
   window.dispatchEvent(new PopStateEvent('popstate'));
