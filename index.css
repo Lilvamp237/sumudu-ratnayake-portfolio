@@ -14,7 +14,6 @@
   --serif: Iowan Old Style, Baskerville, "Times New Roman", serif;
 }
 
-
 :root[data-theme="dark"] {
   color-scheme: dark;
   --paper: #17161a;
