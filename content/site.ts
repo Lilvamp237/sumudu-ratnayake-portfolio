@@ -434,27 +434,6 @@ export const publications: ResearchEntry[] = [
     typeNote: 'International conference · Abstract only · Under review',
     summary: 'A knowledge-graph approach to mitigating cognitive overload in assistive technologies through more intelligent environmental perception.',
   },
-  {
-    slug: 'ontology-diagnostic-agents-sign-language',
-    title: 'Ontology-Grounded Diagnostic Agents for Explainable Near-Miss Feedback in Sign-Language Tutoring',
-    authors: 'Sumudu Ratnayake, Dinuka Wickramasinghe, Mrs. Dharani Abeysinghe, Mr. Dishan De Silva',
-    venue: 'SLAAI-ICAI-2026 - IEEE International Conference',
-    year: '2026',
-    status: 'Needs review',
-    typeNote: 'IEEE international conference · IEEE Xplore · Under review',
-    summary: 'Ontology-grounded diagnostic agents that generate explainable near-miss feedback for sign-language tutoring systems.',
-  },
-  {
-    slug: 'dynamic-svo-autonomous-vehicle-swarms',
-    title: 'Dynamic Social Value Orientation in Autonomous Vehicle Swarms: A Framework for Collective Urban Intelligence',
-    authors: 'Sumudu Ratnayake, Dinuka Wickramasinghe, Sasini Lekamalage, Senuda Weliwatta, Dr. Menaka Ranasinghe',
-    venue: 'ICTer-2026',
-    year: '2026',
-    status: 'Needs review',
-    typeNote: 'International conference · Full paper · Under review',
-    summary: 'A framework for collective urban intelligence based on dynamic social value orientation across autonomous vehicle swarms.',
-    project: 'autonomous-swarms',
-  },
 ];
 
 export const writing: WritingPost[] = [
