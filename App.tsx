@@ -5,6 +5,7 @@ import { AboutPage, ContactPage, CurrentlyPage, HomePage, NotFoundPage, PostPage
 import { navigate, readRoute, scrollToPageTop } from './utils/router';
 import './index.css';
 
+
 const metadata: Record<string, [string, string]> = {
   '/': ['Sumudu Ratnayake, Software engineer & researcher', 'Curious builder exploring AI, research, and software, turning ideas into systems that matter.'],
   '/about': ['About, Sumudu Ratnayake', 'The story behind Sumudu Ratnayake’s work across software engineering, AI, and research.'],
