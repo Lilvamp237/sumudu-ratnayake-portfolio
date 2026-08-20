@@ -490,7 +490,7 @@ export const writing: WritingPost[] = [
     title: 'Learning Programming Before AI',
     excerpt: 'Books, documentation, Stack Overflow, experiments, and the habits that came from learning before assistants became part of the workflow.',
     category: 'Journey', tags: ['learning', 'AI', 'fundamentals'], featured: true, status: 'Published',
-    date: 'Aug 17, 2026', readingTime: '5 min read',
+    date: 'Aug 20, 2026', readingTime: '5 min read',
     outline: ['Learning from slow feedback', 'Why I avoided AI for OOP and DSA', 'How I use AI now without outsourcing understanding'],
     blocks: [
       { type: 'paragraph', text: 'I learned programming at a pretty interesting time.' },
