@@ -49,7 +49,10 @@ function HeroDiagram() {
 export function HomePage() {
   const latestProject = projects[0];
   const latestPublication = publications.find((p) => p.slug === 'inclusive-digital-infrastructure') ?? publications[0];
-  const latestPost = writing[0];
+  const publishedPosts = writing.filter((post) => post.status === 'Published' && post.date);
+  const latestPost = publishedPosts.length
+    ? publishedPosts.reduce((latest, post) => (new Date(post.date!) > new Date(latest.date!) ? post : latest))
+    : writing[0];
   return <>
     <section className="hero reveal">
       <div className="hero-copy"><p className="eyebrow">Sumudu Ratnayake · Software engineer & researcher</p><h1>{site.headline}</h1><p className="hero-subhead">{site.subhead}</p>
